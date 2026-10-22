@@ -1,0 +1,52 @@
+[
+  {
+    "_id": "6ad83f8ef8e0129dc75690a5",
+    "name": "SB",
+    "type": "branch",
+    "description": "IEEE Student Branch SNGCE — Parent organisation overseeing all technical chapters.",
+    "coverImage": "",
+    "createdAt": "2026-10-21T04:29:02.107Z",
+    "updatedAt": "2026-10-21T04:29:02.107Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad83f8ef8e0129dc75690a7",
+    "name": "CS",
+    "type": "chapter",
+    "description": "IEEE Computer Society Chapter — Software engineering, AI, computing and algorithms.",
+    "coverImage": "",
+    "createdAt": "2026-10-21T04:29:02.115Z",
+    "updatedAt": "2026-10-21T04:29:02.115Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad83f8ef8e0129dc75690a9",
+    "name": "CIS",
+    "type": "chapter",
+    "description": "IEEE Computational Intelligence Society Chapter — Deep learning, neural networks and smart systems.",
+    "coverImage": "",
+    "createdAt": "2026-10-21T04:29:02.118Z",
+    "updatedAt": "2026-10-21T04:29:02.118Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad83f8ef8e0129dc75690ab",
+    "name": "SPS",
+    "type": "chapter",
+    "description": "IEEE Signal Processing Society Chapter — DSP, telecommunications, audio and image processing.",
+    "coverImage": "",
+    "createdAt": "2026-10-21T04:29:02.120Z",
+    "updatedAt": "2026-10-21T04:29:02.120Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad83f8ef8e0129dc75690ad",
+    "name": "WIE",
+    "type": "chapter",
+    "description": "IEEE Women in Engineering Affinity Group — Empowering and advancing women in technology.",
+    "coverImage": "",
+    "createdAt": "2026-10-21T04:29:02.123Z",
+    "updatedAt": "2026-10-21T04:29:02.123Z",
+    "__v": 0
+  }
+]

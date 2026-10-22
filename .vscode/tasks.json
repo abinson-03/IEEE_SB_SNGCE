@@ -1,0 +1,40 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Full-Stack App (npm run dev)",
+      "type": "shell",
+      "command": "npm run dev",
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^$"
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Start Backend Server (Port 5000)",
+      "type": "shell",
+      "command": "npm run server",
+      "isBackground": true
+    },
+    {
+      "label": "Start Frontend Client (Port 3000)",
+      "type": "shell",
+      "command": "npm run client",
+      "isBackground": true
+    },
+    {
+      "label": "Check MongoDB Status",
+      "type": "shell",
+      "command": "Get-Service -Name MongoDB",
+      "windows": {
+        "command": "powershell -Command \"Get-Service -Name MongoDB; Get-Process -Name mongod\""
+      }
+    }
+  ]
+}

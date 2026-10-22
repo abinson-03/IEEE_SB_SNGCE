@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "mongodb.mongodb-vscode",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "formulahendry.auto-rename-tag"
+  ]
+}

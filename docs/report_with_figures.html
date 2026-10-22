@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>IEEE SB SNGCE Portal - Project Report</title>
+<style>
+  @page {
+    size: A4;
+    margin: 25mm 20mm 25mm 25mm;
+  }
+  body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 12pt;
+    line-height: 1.5;
+    color: #111827;
+    margin: 0;
+    padding: 0;
+    text-align: justify;
+  }
+  h1 {
+    color: #004976;
+    font-size: 18pt;
+    text-align: center;
+    page-break-before: always;
+    margin-top: 24pt;
+    margin-bottom: 14pt;
+    border-bottom: 2px solid #004976;
+    padding-bottom: 6pt;
+  }
+  h2 {
+    color: #004976;
+    font-size: 14pt;
+    margin-top: 18pt;
+    margin-bottom: 8pt;
+  }
+  h3 {
+    color: #0F172A;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-top: 14pt;
+    margin-bottom: 6pt;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 14pt 0;
+    font-size: 10pt;
+    page-break-inside: avoid;
+  }
+  th, td {
+    border: 1px solid #cbd5e1;
+    padding: 6pt 8pt;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background-color: #004976;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  tr:nth-child(even) td {
+    background-color: #f8fafc;
+  }
+  img {
+    max-width: 95%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+  pre, code {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 9.5pt;
+  }
+  pre {
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-left: 4px solid #004976;
+    padding: 8pt 12pt;
+    page-break-inside: avoid;
+  }
+  hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20pt 0;
+  }
+</style>
+</head>
+<body>
+<h1>SCRUM PROJECT : IEEE SB SNGCE PORTAL</h1>
+<h2>UNIFIED STUDENT BRANCH &amp; MULTI-CHAPTER OPERATIONS PLATFORM</h2>
+<hr />
+<h3>PROJECT REPORT</h3>
+<p><em>Submitted by</em><br />
+<strong>ABINSON BABU</strong><br />
+<strong>(Reg. No: SNG25MCA-2002)</strong>  </p>
+<p><em>Under the guidance of</em><br />
+<strong>DR. ANOOPKUMAR M</strong><br />
+<em>Associate Professor, Department of Computer Applications</em>  </p>
+<p><em>to</em><br />
+<strong>APJ ABDUL KALAM TECHNOLOGICAL UNIVERSITY</strong><br />
+<em>in partial fulfillment of the requirements for the award of the Degree of</em><br />
+<strong>MASTER OF COMPUTER APPLICATIONS (MCA)</strong>  </p>
+<pre><code>        ▲
+       / \
+      /   \
+     / SNG \
+    /  MCA  \
+   /_________\
+</code></pre>
+<p><strong>DEPARTMENT OF COMPUTER APPLICATIONS</strong><br />
+<strong>SREE NARAYANA GURUKULAM COLLEGE OF ENGINEERING (SNGCE)</strong><br />
+<strong>KADAYIRUPPU, KOLENCHERY, KERALA – 682311</strong><br />
+<strong>NOVEMBER 2026</strong></p>
+<hr />
+<h2>DECLARATION</h2>
+<p>I, the undersigned, hereby declare that the project report entitled <strong>“IEEE SB SNGCE PORTAL – UNIFIED STUDENT BRANCH &amp; MULTI-CHAPTER OPERATIONS PLATFORM”</strong>, submitted for partial fulfillment of the requirements for the award of the degree of Master of Computer Applications of the APJ Abdul Kalam Technological University, Kerala, is a bonafide record of individual project work done by me under the supervision of <strong>DR. ANOOPKUMAR M</strong>, Associate Professor, Department of Computer Applications, SNGCE, Kadayiruppu.</p>
+<p>This submission represents my ideas in my own words and where ideas or words of others have been included, I have adequately and accurately cited and referenced the original sources. I also declare that I have adhered to the ethics of academic honesty and integrity and have not misrepresented or fabricated any data, idea, fact, or source in my submission. I understand that any violation of the above will be a cause for disciplinary action by the institute and/or the University and can also evoke penal action from the sources which have thus not been properly cited or from whom proper permission has not been obtained. This report has not previously formed the basis for the award of any degree, diploma, associateship, or similar title of any other University or Institution.</p>
+<p><strong>Place:</strong> Kadayiruppu<br />
+<strong>Date:</strong> 21 November 2026  </p>
+<p><strong>ABINSON BABU</strong><br />
+(Reg. No: SNG25MCA-2002)</p>
+<hr />
+<h2>CERTIFICATE</h2>
+<p><strong>DEPARTMENT OF COMPUTER APPLICATIONS</strong><br />
+<strong>SREE NARAYANA GURUKULAM COLLEGE OF ENGINEERING (SNGCE)</strong><br />
+<strong>KADAYIRUPPU, ERNAKULAM, KERALA – 682311</strong></p>
+<p>This is to certify that the project report entitled <strong>“IEEE SB SNGCE PORTAL – UNIFIED STUDENT BRANCH &amp; MULTI-CHAPTER OPERATIONS PLATFORM”</strong> submitted by <strong>ABINSON BABU (Reg. No: SNG25MCA-2002)</strong> to the APJ Abdul Kalam Technological University in partial fulfillment of the requirements for the award of the Degree of <strong>Master of Computer Applications</strong> is a bonafide record of the individual project work carried out by him under my guidance and supervision.</p>
+<p>This report in any form has not been submitted to any other University or Institute for the award of any degree or diploma.</p>
+<p><br/><br/></p>
+<p><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em>_ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong><strong><em>_</em></strong><strong><em>_</em></strong><strong><em>_</em></strong>____<br />
+<strong>Dr. Anoopkumar M</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>Dr. Sandhya R</strong><br />
+<em>Internal Project Guide</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Head of the Department</em><br />
+<em>Associate Professor, Dept. of CA</em> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Department of Computer Applications</em>  </p>
+<p><br/></p>
+<hr />
+<p><strong>Project Coordinator</strong><br />
+<em>Department of Computer Applications</em></p>
+<hr />
+<h2>ACKNOWLEDGEMENT</h2>
+<p>I express my deepest gratitude to all who supported me in completing this academic mini-project, <strong>“IEEE SB SNGCE Portal – Unified Student Branch &amp; Multi-Chapter Operations Platform”</strong>, undertaken as part of the MCA curriculum at Sree Narayana Gurukulam College of Engineering (SNGCE), affiliated with APJ Abdul Kalam Technological University (KTU).</p>
+<p>First and foremost, I extend my heartfelt thanks to <strong>Prof. Dr. S Jose</strong>, Principal of SNGCE, for providing a technically progressive academic environment, encouraging research, and fostering an atmosphere of software innovation.</p>
+<p>I am profoundly grateful to <strong>Dr. Sandhya R</strong>, Head of the Department of Computer Applications, for her continuous encouragement, administrative backing, and guidance throughout the project duration.</p>
+<p>My sincere and special gratitude goes to my project guide, <strong>Dr. Anoopkumar M</strong>, Associate Professor, Department of Computer Applications, for her continuous mentorship, critical reviews, technical guidance, and suggestions. His constructive feedback during Scrum reviews helped shape the portal's architectural foundation and implementation strategy.</p>
+<p>I also acknowledge <strong>Dr. Anoopkumar M</strong>, Associate Professor and Scrum Master, for his guidance regarding Agile Scrum project tracking and sprint cadence adherence.</p>
+<p>I express my gratitude to all faculty and technical staff of the Department of Computer Applications for their direct and indirect support. Above all, I thank God Almighty for granting me the wisdom, perseverance, and strength to bring this work to fruition, and my parents for their boundless love, encouragement, and support.</p>
+<p><strong>ABINSON BABU</strong></p>
+<hr />
+<h2>ABSTRACT</h2>
+<p>The IEEE Student Branch at SNGCE (IEEE SB SNGCE) comprises multiple technical society chapters and affinity groups, including the Computer Society (CS), Computational Intelligence Society (CIS), Signal Processing Society (SPS), and Women in Engineering (WIE). Efficiently administering these units—spanning cross-chapter event planning, participant registrations, UPI fee reconciliation, physical attendance verification, automated certificate generation, and executive duty tracking—has historically relied on disjointed manual workflows. Such fragmentation causes administrative overhead, registration duplications, attendance discrepancies, delays in certificate issuance, and limited institutional visibility.</p>
+<p>To solve these operational challenges, the IEEE SB SNGCE Portal was conceptualized, architected, and engineered as an integrated web platform leveraging the MERN technology stack (MongoDB, Express.js, React.js 19, and Node.js). The portal implements a secure Role-Based Access Control (RBAC) hierarchy accommodating five distinct user tiers: Public Visitors, Registered Student Members, Chapter ExeCom Officers, Chapter Administrators, and Super Administrators. Core capabilities include an interactive public showcase of chapter activities, an automated event registration engine with UPI payment screenshot proof submission, camera-based dynamic QR code scanning for attendance validation, automated server-side PDF certificate generation via PDFKit with cryptographic verification IDs, and transactional email notifications powered by Nodemailer Gmail SMTP.</p>
+<p>The system also provides dedicated workspaces for chapter executive officers to manage task backlogs, oversee officer duty assignments, publish official notices, curate event photo galleries with geolocation tags, and review system audit trails. Developed under the Scrum agile framework across seven iterative sprints, the platform enforces input validation, bcrypt password hashing, JWT authentication, and responsive Tailwind CSS user interfaces. Comprehensive unit, integration, and user acceptance testing confirm that the IEEE SB SNGCE Portal significantly reduces administrative effort, prevents certificate tampering, and provides a dependable digital backbone for student branch operations.</p>
+<hr />
+<h2>CONTENTS</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Chapter / Section</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Page No.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>ACKNOWLEDGEMENT</strong></td>
+<td style="text-align: left;">iii</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>ABSTRACT</strong></td>
+<td style="text-align: left;">iv</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>LIST OF TABLES</strong></td>
+<td style="text-align: left;">vii</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>LIST OF FIGURES</strong></td>
+<td style="text-align: left;">viii</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>ABBREVIATIONS</strong></td>
+<td style="text-align: left;">ix</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>NOTATIONS</strong></td>
+<td style="text-align: left;">x</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>SCRUM PROJECT FRAMEWORK</strong></td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;">Team Roles and Responsibilities</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;">KTU Learning Outcomes &amp; Course Mapping</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;">Vision, Mission &amp; PEOs</td>
+<td style="text-align: left;">4</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 1</strong></td>
+<td style="text-align: left;"><strong>PROJECT IDENTITY</strong></td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.1</td>
+<td style="text-align: left;">Problem Story</td>
+<td style="text-align: left;">5</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.1.1</td>
+<td style="text-align: left;">Problem Statement</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.1.2</td>
+<td style="text-align: left;">Relevance to Society / Industry &amp; SDGs</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.1.3</td>
+<td style="text-align: left;">Requirements Surveys (Functional &amp; Non-Functional)</td>
+<td style="text-align: left;">8</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.2</td>
+<td style="text-align: left;">Project Overview – Proposed Solution</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.2.1</td>
+<td style="text-align: left;">Solution Concept &amp; Working Principle</td>
+<td style="text-align: left;">11</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.2.2</td>
+<td style="text-align: left;">Key Features &amp; Technology Requirements</td>
+<td style="text-align: left;">14</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.3</td>
+<td style="text-align: left;">Project Analysis – Existing vs Proposed</td>
+<td style="text-align: left;">17</td>
+</tr>
+<tr>
+<td style="text-align: left;">1.4</td>
+<td style="text-align: left;">Use Cases &amp; Actor Model</td>
+<td style="text-align: left;">19</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 2</strong></td>
+<td style="text-align: left;"><strong>PRODUCT BACKLOGS</strong></td>
+<td style="text-align: left;">22</td>
+</tr>
+<tr>
+<td style="text-align: left;">2.1</td>
+<td style="text-align: left;">Integrated Initial Record (User Stories US01 – US16)</td>
+<td style="text-align: left;">22</td>
+</tr>
+<tr>
+<td style="text-align: left;">2.2</td>
+<td style="text-align: left;">Detailed Use Case Specifications (UC-01 to UC-16)</td>
+<td style="text-align: left;">24</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 3</strong></td>
+<td style="text-align: left;"><strong>STORY POINT ESTIMATION</strong></td>
+<td style="text-align: left;">38</td>
+</tr>
+<tr>
+<td style="text-align: left;">3.1</td>
+<td style="text-align: left;">Introduction &amp; Objectives</td>
+<td style="text-align: left;">38</td>
+</tr>
+<tr>
+<td style="text-align: left;">3.2</td>
+<td style="text-align: left;">Estimation Approach &amp; Scale (Planning Poker)</td>
+<td style="text-align: left;">39</td>
+</tr>
+<tr>
+<td style="text-align: left;">3.3</td>
+<td style="text-align: left;">User Story Estimation Register</td>
+<td style="text-align: left;">40</td>
+</tr>
+<tr>
+<td style="text-align: left;">3.4</td>
+<td style="text-align: left;">Estimation Rationale &amp; Distribution Analysis</td>
+<td style="text-align: left;">42</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 4</strong></td>
+<td style="text-align: left;"><strong>RELEASE &amp; SPRINT PLAN</strong></td>
+<td style="text-align: left;">45</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.1</td>
+<td style="text-align: left;">Product Backlog Prioritization (MoSCoW)</td>
+<td style="text-align: left;">45</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.2</td>
+<td style="text-align: left;">Planned Detailed Schedule (Sprints 1 to 7)</td>
+<td style="text-align: left;">46</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.3</td>
+<td style="text-align: left;">Architectural Overview (MERN Tier Architecture)</td>
+<td style="text-align: left;">48</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.4</td>
+<td style="text-align: left;">Logical Data Model / ER Concept</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.5</td>
+<td style="text-align: left;">UI/UX Wireframe Plan</td>
+<td style="text-align: left;">52</td>
+</tr>
+<tr>
+<td style="text-align: left;">4.6</td>
+<td style="text-align: left;">Comprehensive Technology Stack</td>
+<td style="text-align: left;">54</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 5</strong></td>
+<td style="text-align: left;"><strong>PROJECT PROGRESS AND MANAGEMENT</strong></td>
+<td style="text-align: left;">56</td>
+</tr>
+<tr>
+<td style="text-align: left;">5.1 – 5.7</td>
+<td style="text-align: left;">Sprints 1 to 7 Progress, Boards, Logs, Reviews &amp; Retrospectives</td>
+<td style="text-align: left;">56 – 72</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 6</strong></td>
+<td style="text-align: left;"><strong>BURNDOWN MONITORING</strong></td>
+<td style="text-align: left;">73</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.1</td>
+<td style="text-align: left;">Sprint Burndown Analysis</td>
+<td style="text-align: left;">73</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.2</td>
+<td style="text-align: left;">Product Burndown Chart &amp; Progress Tracking</td>
+<td style="text-align: left;">75</td>
+</tr>
+<tr>
+<td style="text-align: left;">6.3</td>
+<td style="text-align: left;">Variance Analysis &amp; Corrective Actions</td>
+<td style="text-align: left;">76</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 7</strong></td>
+<td style="text-align: left;"><strong>SCRUM CEREMONY EVIDENCE REGISTER</strong></td>
+<td style="text-align: left;">77</td>
+</tr>
+<tr>
+<td style="text-align: left;">7.1</td>
+<td style="text-align: left;">Daily Scrum Consolidation (S1-DS01 to S7-DS10)</td>
+<td style="text-align: left;">77</td>
+</tr>
+<tr>
+<td style="text-align: left;">7.2</td>
+<td style="text-align: left;">Impediment &amp; Action Register</td>
+<td style="text-align: left;">82</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 8</strong></td>
+<td style="text-align: left;"><strong>GITHUB / VERSION CONTROL</strong></td>
+<td style="text-align: left;">84</td>
+</tr>
+<tr>
+<td style="text-align: left;">8.1</td>
+<td style="text-align: left;">Repository Structure &amp; Branching Strategy</td>
+<td style="text-align: left;">84</td>
+</tr>
+<tr>
+<td style="text-align: left;">8.2</td>
+<td style="text-align: left;">Commit Management &amp; Sprint Evidence</td>
+<td style="text-align: left;">86</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 9</strong></td>
+<td style="text-align: left;"><strong>TESTING AND ACCEPTANCE</strong></td>
+<td style="text-align: left;">88</td>
+</tr>
+<tr>
+<td style="text-align: left;">9.1</td>
+<td style="text-align: left;">Testing Strategy &amp; Levels</td>
+<td style="text-align: left;">88</td>
+</tr>
+<tr>
+<td style="text-align: left;">9.2</td>
+<td style="text-align: left;">Functional &amp; Security Test Cases</td>
+<td style="text-align: left;">89</td>
+</tr>
+<tr>
+<td style="text-align: left;">9.3</td>
+<td style="text-align: left;">Automated Test Suite Results &amp; Acceptance Matrix</td>
+<td style="text-align: left;">92</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CHAPTER 10</strong></td>
+<td style="text-align: left;"><strong>FINAL PRODUCT EVIDENCE</strong></td>
+<td style="text-align: left;">94</td>
+</tr>
+<tr>
+<td style="text-align: left;">10.1</td>
+<td style="text-align: left;">Final Product Screenshots &amp; Module Walkthrough</td>
+<td style="text-align: left;">94</td>
+</tr>
+<tr>
+<td style="text-align: left;">10.2</td>
+<td style="text-align: left;">Traceability Matrix &amp; Product Acceptance</td>
+<td style="text-align: left;">97</td>
+</tr>
+<tr>
+<td style="text-align: left;">&nbsp;</td>
+<td style="text-align: left;"><strong>REFERENCES</strong></td>
+<td style="text-align: left;">99</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LIST OF TABLES</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Table No.</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Page No.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Table 1.1</td>
+<td style="text-align: left;">Alignment of IEEE SB Portal with UN Sustainable Development Goals</td>
+<td style="text-align: left;">7</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 1.2</td>
+<td style="text-align: left;">Stakeholder Requirements Survey Matrix</td>
+<td style="text-align: left;">9</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 1.3</td>
+<td style="text-align: left;">Functional Requirements Specification (FR01 – FR12)</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 1.4</td>
+<td style="text-align: left;">Non-Functional Requirements Specification (NFR01 – NFR08)</td>
+<td style="text-align: left;">10</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 1.5</td>
+<td style="text-align: left;">Comprehensive Feature List of the Application</td>
+<td style="text-align: left;">15</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 1.6</td>
+<td style="text-align: left;">Comparison: Existing Approaches vs Proposed IEEE SB Portal</td>
+<td style="text-align: left;">18</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 1.7</td>
+<td style="text-align: left;">User Role Identification &amp; Privileges</td>
+<td style="text-align: left;">20</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 1.8</td>
+<td style="text-align: left;">Primary Use Case Identification</td>
+<td style="text-align: left;">21</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 2.1</td>
+<td style="text-align: left;">Product Backlog Items (US01 – US16)</td>
+<td style="text-align: left;">23</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 3.1</td>
+<td style="text-align: left;">Modified Fibonacci Story Point Estimation Scale</td>
+<td style="text-align: left;">39</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 3.2</td>
+<td style="text-align: left;">User Story Estimation Register</td>
+<td style="text-align: left;">41</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 3.3</td>
+<td style="text-align: left;">Estimation Rationale for Major User Stories</td>
+<td style="text-align: left;">42</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 3.4</td>
+<td style="text-align: left;">Story Point Distribution by Priority (MoSCoW)</td>
+<td style="text-align: left;">43</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 4.1</td>
+<td style="text-align: left;">Prioritized Product Backlog</td>
+<td style="text-align: left;">45</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 4.2</td>
+<td style="text-align: left;">Sprint-Wise Implementation Schedule</td>
+<td style="text-align: left;">46</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 4.3</td>
+<td style="text-align: left;">Milestone Deliverables Schedule</td>
+<td style="text-align: left;">47</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 4.4</td>
+<td style="text-align: left;">Database Collections &amp; Schema Mapping</td>
+<td style="text-align: left;">51</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 4.5</td>
+<td style="text-align: left;">UI/UX Wireframe Design Matrix</td>
+<td style="text-align: left;">53</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 4.6</td>
+<td style="text-align: left;">Comprehensive Technology Stack Specifications</td>
+<td style="text-align: left;">55</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 5.1 – 5.7</td>
+<td style="text-align: left;">Sprint 1 to Sprint 7 Summaries and Task Plans</td>
+<td style="text-align: left;">57 – 71</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 6.1</td>
+<td style="text-align: left;">Sprint-Wise Burndown Checkpoints</td>
+<td style="text-align: left;">74</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 6.2</td>
+<td style="text-align: left;">Cumulative Product Burndown Tracking Table</td>
+<td style="text-align: left;">75</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 7.1</td>
+<td style="text-align: left;">Daily Scrum Evidence Register (Sprints 1 to 7)</td>
+<td style="text-align: left;">78 – 81</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 7.2</td>
+<td style="text-align: left;">Impediment and Action Register</td>
+<td style="text-align: left;">82</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 8.1</td>
+<td style="text-align: left;">Version Control &amp; Branching Strategy</td>
+<td style="text-align: left;">85</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 9.1</td>
+<td style="text-align: left;">Comprehensive Functional Test Cases (TC01 – TC16)</td>
+<td style="text-align: left;">90</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 9.2</td>
+<td style="text-align: left;">Automated Test Execution Results Summary</td>
+<td style="text-align: left;">93</td>
+</tr>
+<tr>
+<td style="text-align: left;">Table 10.1</td>
+<td style="text-align: left;">Final Product Acceptance Status Matrix</td>
+<td style="text-align: left;">98</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>LIST OF FIGURES</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Figure No.</th>
+<th style="text-align: left;">Title</th>
+<th style="text-align: left;">Page No.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Figure 1.1</td>
+<td style="text-align: left;">Operational Bottlenecks in Traditional Student Branch Management</td>
+<td style="text-align: left;">6</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 1.2</td>
+<td style="text-align: left;">High-Level System Architecture of IEEE SB SNGCE Portal</td>
+<td style="text-align: left;">12</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 1.3</td>
+<td style="text-align: left;">End-to-End Operational Flowchart of the Portal</td>
+<td style="text-align: left;">13</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 1.4</td>
+<td style="text-align: left;">High-Level UML Use Case Diagram</td>
+<td style="text-align: left;">21</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 3.1</td>
+<td style="text-align: left;">Story Point Distribution Chart</td>
+<td style="text-align: left;">44</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 4.1</td>
+<td style="text-align: left;">MERN Four-Tier Layered Architecture Diagram</td>
+<td style="text-align: left;">49</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 4.2</td>
+<td style="text-align: left;">Entity-Relationship (ER) Concept Diagram of Portal Models</td>
+<td style="text-align: left;">50</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 6.1</td>
+<td style="text-align: left;">Cumulative Product Burndown Chart</td>
+<td style="text-align: left;">76</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 8.1</td>
+<td style="text-align: left;">GitHub Repository Directory Structure</td>
+<td style="text-align: left;">85</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 10.1</td>
+<td style="text-align: left;">Public Home Page with Live Bento Grid Stats &amp; Highlights</td>
+<td style="text-align: left;">94</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 10.2</td>
+<td style="text-align: left;">Chapter Hub Page (CIS Chapter with Officer Grid &amp; Activities)</td>
+<td style="text-align: left;">95</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 10.3</td>
+<td style="text-align: left;">Dynamic Event Detail Page with QR Attendance Modal</td>
+<td style="text-align: left;">95</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 10.4</td>
+<td style="text-align: left;">Public Certificate Verification Portal</td>
+<td style="text-align: left;">96</td>
+</tr>
+<tr>
+<td style="text-align: left;">Figure 10.5</td>
+<td style="text-align: left;">Geotagged Event Gallery &amp; Expanded Album Modal</td>
+<td style="text-align: left;">96</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>ABBREVIATIONS</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Abbreviation</th>
+<th style="text-align: left;">Full Form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>API</strong></td>
+<td style="text-align: left;">Application Programming Interface</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CIS</strong></td>
+<td style="text-align: left;">Computational Intelligence Society</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CS</strong></td>
+<td style="text-align: left;">Computer Society</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CSS</strong></td>
+<td style="text-align: left;">Cascading Style Sheets</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DoD</strong></td>
+<td style="text-align: left;">Definition of Done</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>DOM</strong></td>
+<td style="text-align: left;">Document Object Model</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>E2E</strong></td>
+<td style="text-align: left;">End-to-End (Testing)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ExeCom</strong></td>
+<td style="text-align: left;">Executive Committee</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HTML</strong></td>
+<td style="text-align: left;">HyperText Markup Language</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>HTTP / HTTPS</strong></td>
+<td style="text-align: left;">HyperText Transfer Protocol / Secure</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>IEEE</strong></td>
+<td style="text-align: left;">Institute of Electrical and Electronics Engineers</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>JWT</strong></td>
+<td style="text-align: left;">JSON Web Token</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>KTU</strong></td>
+<td style="text-align: left;">APJ Abdul Kalam Technological University</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MERN</strong></td>
+<td style="text-align: left;">MongoDB, Express.js, React.js, Node.js</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>MoSCoW</strong></td>
+<td style="text-align: left;">Must have, Should have, Could have, Won't have</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ODM</strong></td>
+<td style="text-align: left;">Object Data Modeling</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PBI</strong></td>
+<td style="text-align: left;">Product Backlog Item</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>PDF</strong></td>
+<td style="text-align: left;">Portable Document Format</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>QR Code</strong></td>
+<td style="text-align: left;">Quick Response Code</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>RBAC</strong></td>
+<td style="text-align: left;">Role-Based Access Control</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>REST</strong></td>
+<td style="text-align: left;">Representational State Transfer</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SB</strong></td>
+<td style="text-align: left;">Student Branch</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SBC</strong></td>
+<td style="text-align: left;">Student Branch Chapter</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SDG</strong></td>
+<td style="text-align: left;">Sustainable Development Goals</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SMTP</strong></td>
+<td style="text-align: left;">Simple Mail Transfer Protocol</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SNGCE</strong></td>
+<td style="text-align: left;">Sree Narayana Gurukulam College of Engineering</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SPA</strong></td>
+<td style="text-align: left;">Single Page Application</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SPS</strong></td>
+<td style="text-align: left;">Signal Processing Society</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>UI / UX</strong></td>
+<td style="text-align: left;">User Interface / User Experience</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>UPI</strong></td>
+<td style="text-align: left;">Unified Payments Interface</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>WIE</strong></td>
+<td style="text-align: left;">Women in Engineering Affinity Group</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2>NOTATIONS</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Notation</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">$U$</td>
+<td style="text-align: left;">User entity in authentication domain</td>
+</tr>
+<tr>
+<td style="text-align: left;">$R_{global}$</td>
+<td style="text-align: left;">Global security role ($R_{global} \in {\text{superadmin}, \text{chapteradmin}, \text{execom}, \text{member}, \text{guest}}$)</td>
+</tr>
+<tr>
+<td style="text-align: left;">$E$</td>
+<td style="text-align: left;">Event document instance</td>
+</tr>
+<tr>
+<td style="text-align: left;">$P_{event}$</td>
+<td style="text-align: left;">Event pricing tier ($P_{event} \in {\text{free}, \text{paid}}$)</td>
+</tr>
+<tr>
+<td style="text-align: left;">$T_{checkin}$</td>
+<td style="text-align: left;">32-character hexadecimal cryptographically secure QR check-in token</td>
+</tr>
+<tr>
+<td style="text-align: left;">$C_{cert}$</td>
+<td style="text-align: left;">Certificate document instance containing unique certificate identifier</td>
+</tr>
+<tr>
+<td style="text-align: left;">$A_{photo}$</td>
+<td style="text-align: left;">Event gallery media asset stored on disk with relative path</td>
+</tr>
+<tr>
+<td style="text-align: left;">$SP$</td>
+<td style="text-align: left;">Story Point metric representing relative development complexity</td>
+</tr>
+<tr>
+<td style="text-align: left;">$v$</td>
+<td style="text-align: left;">Sprint velocity measured in completed story points per sprint</td>
+</tr>
+<tr>
+<td style="text-align: left;">$H_{rem}$</td>
+<td style="text-align: left;">Remaining development effort measured in hours</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>SCRUM PROJECT FRAMEWORK</h1>
+<h3>Introduction to Scrum</h3>
+<p>Scrum is an industry-standard Agile framework designed for developing and sustaining complex software products. Through structured, iterative cycles known as <strong>Sprints</strong> (typically 1 to 2 weeks), Scrum emphasizes incremental progress, cross-functional collaboration, empirical process control, and adaptive response to evolving requirements. </p>
+<p>In this academic mini-project, the development of the <strong>IEEE SB SNGCE Portal</strong> strictly adopted the Scrum methodology mandated by the APJ Abdul Kalam Technological University (KTU) Master of Computer Applications (MCA) curriculum. All software engineering activities—from requirements gathering to architectural design, API development, UI styling, and automated verification—were tracked and executed across seven planned sprints.</p>
+<h3>Academic Project Roles &amp; Responsibilities</h3>
+<p>In an individual academic mini-project operating under the KTU Scrum guidelines, the responsibilities are defined as follows:</p>
+<ol>
+<li><strong>Product Owner (PO) — Dr. Anoopkumar M (Associate Professor, Dept. of CA)</strong>:</li>
+<li>Represents the academic department and IEEE Student Branch stakeholders.</li>
+<li>Defines the product vision and high-level project goals.</li>
+<li>Owns, prioritizes, and approves items in the Product Backlog.</li>
+<li>
+<p>Evaluates sprint increments during Sprint Reviews against defined Acceptance Criteria.</p>
+</li>
+<li>
+<p><strong>Scrum Master (SM) — Dr. Anoopkumar M (Associate Professor, Dept. of CA)</strong>:</p>
+</li>
+<li>Facilitates Scrum ceremonies and monitors process health.</li>
+<li>Helps identify and remove technical impediments and blockers.</li>
+<li>
+<p>Ensures strict adherence to Agile principles, burn-down tracking, and KTU course outcomes.</p>
+</li>
+<li>
+<p><strong>Development Team — Abinson Babu (SNG25MCA-2002)</strong>:</p>
+</li>
+<li>Functions as the sole cross-functional software engineer responsible for:<ul>
+<li>Full-stack architectural design (MERN Stack).</li>
+<li>REST API implementation in Node.js &amp; Express.js.</li>
+<li>Single Page Application (SPA) development in React.js 19.</li>
+<li>Database schema modeling in MongoDB/Mongoose.</li>
+<li>Automated End-to-End (E2E) verification and unit testing.</li>
+<li>Technical documentation, deployment, and sprint delivery.</li>
+</ul>
+</li>
+</ol>
+<hr />
+<h3>KTU MCA Course Outcomes &amp; Mapping</h3>
+<p>The project satisfies the MCA Mini-Project curriculum objectives set forth by KTU:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">CO No.</th>
+<th style="text-align: left;">Course Outcome Description</th>
+<th style="text-align: left;">Bloom's Level</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>CO 1</strong></td>
+<td style="text-align: left;">Identify a real-life project that is useful to society/institution</td>
+<td style="text-align: left;">Level 2: Understand</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CO 2</strong></td>
+<td style="text-align: left;">Interact with stakeholders to identify system requirements</td>
+<td style="text-align: left;">Level 3: Apply</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CO 3</strong></td>
+<td style="text-align: left;">Apply suitable development methodology (Agile Scrum)</td>
+<td style="text-align: left;">Level 3: Apply</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CO 4</strong></td>
+<td style="text-align: left;">Analyse and design software architecture, data models, and UI</td>
+<td style="text-align: left;">Level 4: Analyse</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CO 5</strong></td>
+<td style="text-align: left;">Test modules at various stages using automated and manual suites</td>
+<td style="text-align: left;">Level 5: Evaluate</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CO 6</strong></td>
+<td style="text-align: left;">Build and integrate full-stack components into a unified system</td>
+<td style="text-align: left;">Level 6: Create</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>CO 7</strong></td>
+<td style="text-align: left;">Document and deploy the product with version control evidence</td>
+<td style="text-align: left;">Level 3: Apply</td>
+</tr>
+</tbody>
+</table>
+<h4>Mapping of Course Outcomes with Program Outcomes (PO1 – PO12)</h4>
+<p><em>(3: High, 2: Medium, 1: Low)</em></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">CO</th>
+<th style="text-align: center;">PO1</th>
+<th style="text-align: center;">PO2</th>
+<th style="text-align: center;">PO3</th>
+<th style="text-align: center;">PO4</th>
+<th style="text-align: center;">PO5</th>
+<th style="text-align: center;">PO6</th>
+<th style="text-align: center;">PO7</th>
+<th style="text-align: center;">PO8</th>
+<th style="text-align: center;">PO9</th>
+<th style="text-align: center;">PO10</th>
+<th style="text-align: center;">PO11</th>
+<th style="text-align: center;">PO12</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>CO 1</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>CO 2</strong></td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>CO 3</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>CO 4</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>CO 5</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>CO 6</strong></td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>CO 7</strong></td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">1</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">3</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>Institutional Vision, Mission &amp; PEOs</h3>
+<h4>Vision of the Department</h4>
+<p><em>“Unequalled Services with Unfolding Technologies.”</em></p>
+<h4>Mission of the Department</h4>
+<ul>
+<li>To foster a culture of innovation, technical creativity, and entrepreneurship.</li>
+<li>To engage with industry, professional bodies, and global technology communities.</li>
+<li>To instill ethical standards, social responsibility, and lifelong learning skills.</li>
+</ul>
+<h4>Program Educational Objectives (PEOs)</h4>
+<ul>
+<li><strong>PEO 1 (Technical Competence)</strong>: Graduates establish themselves as competent software developers and systems analysts applying modern computer science practices.</li>
+<li><strong>PEO 2 (Applied Innovation)</strong>: Graduates promote innovative digital solutions addressing real-world institutional and societal operational challenges.</li>
+<li><strong>PEO 3 (Ethical Leadership)</strong>: Graduates adhere to high ethical standards, cybersecurity principles, and sustainable software practices.</li>
+</ul>
+<hr />
+<h1>CHAPTER 1. PROJECT IDENTITY</h1>
+<p>This chapter presents the background, problem identification, proposed solution, comparative analysis, and functional use cases of the <strong>IEEE SB SNGCE Portal</strong>. It establishes the operational necessity for a centralized web application to manage IEEE Student Branch units, technical chapters, event lifecycles, dynamic attendance, digital certificate verification, and executive media archives.</p>
+<h3>1.1 PROBLEM STORY</h3>
+<p>IEEE Student Branches at collegiate engineering institutions represent vibrant hubs of technological co-curricular activity. At Sree Narayana Gurukulam College of Engineering (SNGCE), the IEEE Student Branch (STB) oversees multiple specialized technical society chapters:
+- <strong>Computer Society (CS)</strong>
+- <strong>Computational Intelligence Society (CIS)</strong>
+- <strong>Signal Processing Society (SPS)</strong>
+- <strong>Women in Engineering (WIE) Affinity Group</strong></p>
+<p>Historically, each chapter operated independently using disjointed, ad-hoc digital tools. Event announcements were broadcast across uncoordinated WhatsApp groups; registrations were recorded on Google Forms; registration fees were collected via screenshots sent to personal UPI accounts; event attendance was marked on paper rosters; certificates were manually drafted in Canva and emailed weeks later; and event photos remained scattered across individual phones.</p>
+<p>This operational fragmentation caused severe institutional overhead:
+1. <strong>Administrative Overhead</strong>: Officers spent dozens of hours cross-referencing payment screenshots with registration spreadsheets.
+2. <strong>Proxy Attendance &amp; Lost Records</strong>: Paper attendance sheets were frequently misplaced, making it impossible to verify authentic event participation.
+3. <strong>Certificate Fraud Risk</strong>: Without a centralized verification registry, certificates could be easily altered or falsified.
+4. <strong>Member Disconnection</strong>: Students had no central dashboard to view their chapter memberships, upcoming events, or issued certificates.
+5. <strong>Loss of Institutional Memory</strong>: Historical records, executive duty assignments, and past event galleries disappeared every time a new ExeCom batch graduated.</p>
+<pre><code class="language-mermaid">flowchart TD
+    subgraph Traditional[&quot;Fragmented Conventional Approach&quot;]
+        A[&quot;Google Forms (Registrations)&quot;]
+        B[&quot;Personal UPI / WhatsApp (Payments)&quot;]
+        C[&quot;Paper Sheets (Attendance)&quot;]
+        D[&quot;Canva / Manual Email (Certificates)&quot;]
+        E[&quot;Personal Drive / Phones (Photos)&quot;]
+    end
+
+    A --&gt; F[&quot;Operational Chaos &amp; Inefficiency&quot;]
+    B --&gt; F
+    C --&gt; F
+    D --&gt; F
+    E --&gt; F
+
+    F --&gt; G[&quot;Data Loss, Manual Errors, &amp; Lack of Accountability&quot;]
+</code></pre>
+<h4>1.1.1 Problem Statement</h4>
+<blockquote>
+<p><strong>Problem Statement</strong>:<br />
+<em>To design, develop, and evaluate a comprehensive, web-based Student Branch and Multi-Chapter Operations Platform that unifies authentication, chapter administration, tiered event ticketing, dynamic QR attendance check-in, automated PDF certificate generation with public cryptographic verification, disk-backed geotagged media galleries, and executive task management within a responsive, secure MERN architecture.</em></p>
+</blockquote>
+<hr />
+<h3>1.1.2 Relevance to Society / Industry &amp; SDGs</h3>
+<ol>
+<li><strong>Relevance to Students &amp; Members</strong>: Provides a modern, single-sign-on student portal where engineering students track event participations, access specialized technical chapter resources, download verified certificates, and submit chapter join requests.</li>
+<li><strong>Relevance to Educational Institutions</strong>: Provides college administrators, Faculty Advisors, and Branch Counselors with real-time auditability over student activities, financial collections, chapter health, and event attendance metrics.</li>
+<li><strong>Relevance to Professional Societies (IEEE)</strong>: Sets an architectural benchmark for how collegiate student branches should manage multi-society chapters transparently, ensuring compliance with IEEE Section guidelines.</li>
+<li><strong>Alignment with UN Sustainable Development Goals (SDGs)</strong>:</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">SDG</th>
+<th style="text-align: left;">Goal Alignment in IEEE SB Portal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>SDG 4: Quality Education</strong></td>
+<td style="text-align: left;">Democratizes access to workshops, hackathons, and technical lectures organized across IEEE technical societies.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SDG 8: Decent Work &amp; Economic Growth</strong></td>
+<td style="text-align: left;">Develops industry-ready skills through hands-on technical seminars and provides verifiable digital credentials.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>SDG 9: Industry, Innovation &amp; Infrastructure</strong></td>
+<td style="text-align: left;">Replaces paper attendance and manual certificate generation with robust, sustainable, serverless-capable digital infrastructure.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>1.1.3 Requirements Surveys</h3>
+<p>To ground the system in genuine stakeholder needs, a requirement survey was formulated targeting five distinct user groups:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Stakeholder Category</th>
+<th style="text-align: left;">Information Collected</th>
+<th style="text-align: left;">Core Requirement Identified</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Students / Members</strong></td>
+<td style="text-align: left;">Registration friction, payment verification delays, lost certificates</td>
+<td style="text-align: left;">Instant registration with membership fee discounts, central certificates locker</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>ExeCom Officers</strong></td>
+<td style="text-align: left;">Verification of UPI screenshots, attendance tracking, task tracking</td>
+<td style="text-align: left;">Fast payment approval dashboard, QR check-in scanner, duty task assignments</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Chapter Chairs</strong></td>
+<td style="text-align: left;">Chapter event scheduling, join request pipeline, officer roster</td>
+<td style="text-align: left;">Dedicated chapter hub, join request approvals, officer directory management</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Branch Counselor / Faculty</strong></td>
+<td style="text-align: left;">Annual reporting, activity auditing, financial oversight</td>
+<td style="text-align: left;">Automated executive advisor digest, tamper-proof activity audit logs</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>General Public / Employers</strong></td>
+<td style="text-align: left;">Certificate authenticity verification</td>
+<td style="text-align: left;">Public certificate verification portal with zero login requirement</td>
+</tr>
+</tbody>
+</table>
+<h4>Functional Requirements (FR)</h4>
+<ul>
+<li><strong>FR01 (Authentication &amp; Profile)</strong>: Secure JWT registration and login with bcrypt hashing (salt 10), email change with deduplication check, password change with old-hash verification, and password reset via Gmail SMTP.</li>
+<li><strong>FR02 (Role-Based Access Control)</strong>: Enforce 5-tier access control (<code>superadmin</code>, <code>chapteradmin</code>, <code>execom</code>, <code>member</code>, <code>guest</code>) across all API routes and UI navigation.</li>
+<li><strong>FR03 (Multi-Chapter Hub)</strong>: Serve CS, CIS, SPS, and WIE chapter pages displaying unit descriptions, focus areas, officer rosters, and filtered activities.</li>
+<li><strong>FR04 (Chapter Join Request)</strong>: Allow non-members/members to request chapter admission, preventing duplicate requests and enabling officer approvals.</li>
+<li><strong>FR05 (Tiered Event Engine)</strong>: Manage event creation, publishing, and dual-tier pricing (free for active members vs paid for guests) with UPI transaction ID and screenshot proof attachment.</li>
+<li><strong>FR06 (Dynamic QR Check-in)</strong>: Generate random 32-character check-in tokens embedded in QR codes; validate attendance with duplicate rejection.</li>
+<li><strong>FR07 (Automated PDF Certificates)</strong>: Generate vector PDF certificates using custom template images and coordinate matrices via PDFKit, assigning unique IDs (<code>IEEE-CIS-2026-XXXXX</code>).</li>
+<li><strong>FR08 (Public Certificate Verification)</strong>: Provide public verification (<code>GET /api/certificates/verify/:certId</code>) returning validity, recipient name, event, and issue date.</li>
+<li><strong>FR09 (Transactional Email Delivery)</strong>: Deliver PDF certificates and password reset tokens automatically via Nodemailer through <code>abinsoncs@gmail.com</code>.</li>
+<li><strong>FR10 (Event Photo Gallery)</strong>: ExeCom multi-photo batch upload stored on disk (<code>server/uploads/events/</code>), caption editing, cover photo selection, GPS coordinate capture, and responsive 16:10 aspect ratio viewing.</li>
+<li><strong>FR11 (Officer Tasks &amp; Roster)</strong>: Assign tasks with deadlines and status tracking (<code>todo</code>, <code>in_progress</code>, <code>done</code>) and detect vacant chapter duties.</li>
+<li><strong>FR12 (Audit Logging &amp; Executive Digest)</strong>: Log all administrative operations to <code>AuditLog</code> and provide email digests of chapter metrics to faculty advisors.</li>
+</ul>
+<h4>Non-Functional Requirements (NFR)</h4>
+<ul>
+<li><strong>NFR01 (Security)</strong>: Passwords hashed with bcrypt; JWT stored in client localStorage and verified via Bearer header; static media served via strictly mapped Express routes without binary bloat in MongoDB.</li>
+<li><strong>NFR02 (Responsive UI / UX)</strong>: Mobile-first responsive layout (320px to 1920px) styled with clean IEEE Navy (<code>#00629B</code> / <code>#0F172A</code>) and warm accent palette; zero text wrapping on navigation bars.</li>
+<li><strong>NFR03 (Performance)</strong>: Sub-200ms API response time; instant vector PDF generation under 500ms; lazy loading and golden aspect ratio scaling on all gallery media.</li>
+<li><strong>NFR04 (Data Integrity)</strong>: Relational constraints enforced via Mongoose schemas; duplicate prevention on event registrations, check-ins, and chapter join requests.</li>
+</ul>
+<hr />
+<h3>1.2 PROJECT OVERVIEW – PROPOSED SOLUTION</h3>
+<h4>1.2.1 Solution Concept &amp; High-Level Architecture</h4>
+<p>The IEEE SB SNGCE Portal is architected as an integrated full-stack web application following the <strong>MERN</strong> (MongoDB, Express.js, React.js, Node.js) design paradigm:</p>
+<pre><code class="language-mermaid">flowchart TD
+    Client[&quot;React.js 19 SPA (Client on Port 3000)&quot;]
+    API[&quot;Express.js REST API (Node.js on Port 5000)&quot;]
+    DB[(&quot;MongoDB Database&quot;)]
+    Disk[&quot;Server File System (/uploads/...)&quot;]
+    SMTP[&quot;Gmail SMTP (abinsoncs@gmail.com)&quot;]
+
+    Client -- &quot;HTTP / REST (JWT Bearer Token)&quot; --&gt; API
+    API -- &quot;Mongoose ODM&quot; --&gt; DB
+    API -- &quot;Multer Streaming&quot; --&gt; Disk
+    API -- &quot;Nodemailer&quot; --&gt; SMTP
+    Disk -- &quot;Static Asset Serving&quot; --&gt; Client
+</code></pre>
+<h4>1.2.1.1 Working Principle &amp; Operational Flowchart</h4>
+<pre><code class="language-mermaid">flowchart TD
+    Start([User Opens Portal]) --&gt; AuthCheck{Logged In?}
+
+    AuthCheck -- No --&gt; PubView[Browse Public Portal: Events, Chapters, Gallery, Cert Verification]
+    AuthCheck -- Yes --&gt; RoleCheck{User Role}
+
+    RoleCheck -- Member --&gt; MemDash[Member Dashboard: My Events, Check-in QR, My Certificates, Join SBC]
+    RoleCheck -- Officer / Admin --&gt; OffDash[Officer Dashboard: Tasks, Join Requests, Cert Issuance, Gallery Upload]
+    RoleCheck -- SuperAdmin --&gt; AdmDash[Admin Dashboard: User Roles, Event Management, System Audit Logs]
+
+    MemDash --&gt; EventReg[Register for Event: Free or UPI Proof]
+    EventReg --&gt; AttCheckin[Scan QR Code at Event Venue]
+    AttCheckin --&gt; CertGen[Officer Triggers Automated Certificate Generation]
+    CertGen --&gt; PDFGen[PDFKit Renders Custom Certificate with Unique ID]
+    PDFGen --&gt; MailDispatch[Gmail SMTP Delivers Certificate PDF to User Inbox]
+    MailDispatch --&gt; VerifyCert[Publicly Verifiable at /verify-certificate]
+</code></pre>
+<hr />
+<h3>1.3 PROJECT ANALYSIS – EXISTING VS PROPOSED</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Operational Capability</th>
+<th style="text-align: left;">Conventional Approach</th>
+<th style="text-align: left;">Proposed IEEE SB Portal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Authentication &amp; RBAC</strong></td>
+<td style="text-align: left;">None (public Google Form or shared spreadsheet)</td>
+<td style="text-align: left;">5-tier role-based access control with secure JWT tokens</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Chapter Architecture</strong></td>
+<td style="text-align: left;">Disconnected groups and separate forms per chapter</td>
+<td style="text-align: left;">Unified portal with dedicated CS, CIS, SPS, and WIE hubs</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Payment Verification</strong></td>
+<td style="text-align: left;">WhatsApp screenshot sharing to personal UPI</td>
+<td style="text-align: left;">Integrated transaction ID &amp; proof screenshot upload with officer approval</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Attendance Check-in</strong></td>
+<td style="text-align: left;">Manual signature on paper attendance sheets</td>
+<td style="text-align: left;">Dynamic cryptographically generated QR code scan with duplicate prevention</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Certificate Delivery</strong></td>
+<td style="text-align: left;">Manual graphic design and individual manual emailing</td>
+<td style="text-align: left;">Automated vector PDF generation with instant Gmail SMTP delivery</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Certificate Verification</strong></td>
+<td style="text-align: left;">None (certificates easily forged)</td>
+<td style="text-align: left;">Public verification registry matching certificate ID in real-time</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Event Gallery</strong></td>
+<td style="text-align: left;">Unorganized Google Drive folders / social media posts</td>
+<td style="text-align: left;">Geotagged, disk-backed photo albums with caption and cover management</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Officer Duties</strong></td>
+<td style="text-align: left;">Verbal delegations / chat reminders</td>
+<td style="text-align: left;">Verifiable task management board with deadline and status tracking</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>1.4 USE CASES &amp; ACTOR MODEL</h3>
+<h4>Identified User Roles &amp; Actors</h4>
+<ol>
+<li><strong>Student Member / Guest</strong>: Browses upcoming activities, registers for events, views check-in QR, downloads verified certificates, requests chapter admission.</li>
+<li><strong>ExeCom Officer</strong>: Manages chapter event check-ins, reviews event payment proofs, uploads event gallery photos, updates duty tasks.</li>
+<li><strong>Chapter Admin (Chair)</strong>: Creates and publishes chapter events, approves chapter join requests, assigns officer tasks, triggers certificate generation.</li>
+<li><strong>Super Admin</strong>: Overrules administrative roles, audits platform operations via immutable audit logs, configures system settings.</li>
+<li><strong>Public Visitor / Employer</strong>: Views public event calendar, explores photo gallery, verifies participant certificates without logging in.</li>
+</ol>
+<pre><code class="language-mermaid">flowchart LR
+    Member[&quot;Student Member&quot;]
+    Officer[&quot;ExeCom Officer&quot;]
+    Admin[&quot;Super / Chapter Admin&quot;]
+    Visitor[&quot;Public Visitor&quot;]
+    System[(&quot;IEEE SB Portal Engine&quot;)]
+
+    Visitor --&gt;|&quot;Verify Certificate&quot;| System
+    Visitor --&gt;|&quot;Browse Events &amp; Gallery&quot;| System
+    Member --&gt;|&quot;Register &amp; Pay&quot;| System
+    Member --&gt;|&quot;QR Check-in&quot;| System
+    Member --&gt;|&quot;Download Certificates&quot;| System
+    Officer --&gt;|&quot;Upload Event Photos&quot;| System
+    Officer --&gt;|&quot;Manage Duty Tasks&quot;| System
+    Admin --&gt;|&quot;Publish Events&quot;| System
+    Admin --&gt;|&quot;Generate Certificates&quot;| System
+    Admin --&gt;|&quot;Approve Join Requests&quot;| System
+</code></pre>
+<hr />
+<h1>CHAPTER 2. PRODUCT BACKLOGS</h1>
+<h3>2.1 INTEGRATED INITIAL RECORD</h3>
+<p>The Product Backlog constitutes the single source of truth for all engineering work undertaken during the development of the IEEE SB SNGCE Portal.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">PBI ID</th>
+<th style="text-align: left;">User Story Title</th>
+<th style="text-align: center;">Sprint</th>
+<th style="text-align: center;">Priority</th>
+<th style="text-align: center;">Est. Hours</th>
+<th style="text-align: center;">Story Points</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>US01</strong></td>
+<td style="text-align: left;">User Authentication &amp; Secure JWT Session Management</td>
+<td style="text-align: center;">Sprint 1</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US02</strong></td>
+<td style="text-align: left;">User Profile Management, Email &amp; Password Change</td>
+<td style="text-align: center;">Sprint 1</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US03</strong></td>
+<td style="text-align: left;">Multi-Chapter Operational Hub &amp; Chapter Ribbon</td>
+<td style="text-align: center;">Sprint 2</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US04</strong></td>
+<td style="text-align: left;">Chapter Membership &amp; Join Request Workflow</td>
+<td style="text-align: center;">Sprint 2</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US05</strong></td>
+<td style="text-align: left;">Public Officer Directory &amp; Member Roster</td>
+<td style="text-align: center;">Sprint 2</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US06</strong></td>
+<td style="text-align: left;">Tiered Event Creation &amp; Publishing Lifecycle</td>
+<td style="text-align: center;">Sprint 3</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US07</strong></td>
+<td style="text-align: left;">Event Registration, Pricing Tiers &amp; UPI Payment Proof</td>
+<td style="text-align: center;">Sprint 3</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US08</strong></td>
+<td style="text-align: left;">Dynamic QR Attendance Code Generation &amp; Check-in</td>
+<td style="text-align: center;">Sprint 4</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US09</strong></td>
+<td style="text-align: left;">Automated Vector PDF Certificate Generation</td>
+<td style="text-align: center;">Sprint 4</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US10</strong></td>
+<td style="text-align: left;">Public Certificate Verification Registry</td>
+<td style="text-align: center;">Sprint 4</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US11</strong></td>
+<td style="text-align: left;">Transactional Email Integration (Gmail SMTP)</td>
+<td style="text-align: center;">Sprint 5</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US12</strong></td>
+<td style="text-align: left;">Event Photo Album &amp; Geotagged Media Gallery</td>
+<td style="text-align: center;">Sprint 5</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US13</strong></td>
+<td style="text-align: left;">Gallery Photo Caption Editing &amp; Cover Photo Assignment</td>
+<td style="text-align: center;">Sprint 5</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US14</strong></td>
+<td style="text-align: left;">ExeCom Duty Task Assignment &amp; Roster Tracking</td>
+<td style="text-align: center;">Sprint 6</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US15</strong></td>
+<td style="text-align: left;">Public Notice Board with Priority Pinning</td>
+<td style="text-align: center;">Sprint 6</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">2</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US16</strong></td>
+<td style="text-align: left;">Bento Grid Live Impact Stats &amp; Faculty Advisor Digest</td>
+<td style="text-align: center;">Sprint 7</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">3</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TOTAL</strong></td>
+<td style="text-align: left;"><strong>16 User Stories Across 7 Sprints</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><strong>89 Hrs</strong></td>
+<td style="text-align: center;"><strong>57 SP</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>2.2 DETAILED USE CASE SPECIFICATIONS</h3>
+<h4>Use Case UC-01: User Authentication &amp; JWT Management</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As a student or officer, I want to securely log in with my credentials so that I can access authorized portal features.</em></li>
+<li><strong>Objective</strong>: Authenticate users, verify bcrypt password hashes, and issue signed JSON Web Tokens (7-day validity).</li>
+<li><strong>Trigger</strong>: User inputs credentials on <code>/login</code>.</li>
+<li><strong>Preconditions</strong>: User has registered an account in MongoDB.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>User enters registered email and password.</li>
+<li>Client submits <code>POST /api/auth/login</code>.</li>
+<li>Server validates credentials against stored bcrypt hash.</li>
+<li>Server returns HTTP 200 with signed JWT token and user profile payload.</li>
+<li>Client stores token in localStorage and updates <code>AuthContext</code>.</li>
+<li>User is redirected to their role-specific dashboard.</li>
+<li><strong>Acceptance Criteria</strong>: Passwords never stored in plain text; invalid credentials return HTTP 401; expired tokens redirect to <code>/login</code>.</li>
+<li><strong>Definition of Done</strong>: Unit tested with valid/invalid logins; JWT interceptor attaching token to all Axios requests.</li>
+</ul>
+<h4>Use Case UC-02: Profile Management &amp; Change Password</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As an authenticated user, I want to update my profile email or change my password with current password verification.</em></li>
+<li><strong>Objective</strong>: Allow users to update contact details and reset password safely without logout breakage.</li>
+<li><strong>Trigger</strong>: User clicks "Save Profile" or submits "Change Password" on <code>/profile</code>.</li>
+<li><strong>Preconditions</strong>: User is logged in with valid JWT token.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>User enters new email and submits <code>PATCH /api/user/profile</code>.</li>
+<li>Server checks email uniqueness, updates <code>User</code> document, and returns updated record.</li>
+<li>For password change, user enters Current Password, New Password (8+ chars), and Confirm Password.</li>
+<li>Server compares Current Password with bcrypt hash; on match, hashes new password and saves.</li>
+<li><strong>Acceptance Criteria</strong>: Changing email preserves User ID without duplication; old password rejected after change; login with new credentials succeeds immediately.</li>
+<li><strong>Definition of Done</strong>: 18/18 profile test suite checks passing.</li>
+</ul>
+<h4>Use Case UC-03: Multi-Chapter Hub Exploration</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As a student, I want to explore dedicated chapter pages (CS, CIS, SPS, WIE) to learn about their initiatives and focus areas.</em></li>
+<li><strong>Objective</strong>: Render chapter-specific hero banners, mission statements, officer rosters, and upcoming activities.</li>
+<li><strong>Trigger</strong>: User selects a chapter from the Navbar dropdown or clicks the chapter switcher ribbon.</li>
+<li><strong>Preconditions</strong>: Chapter records initialized in the database.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>Client navigates to <code>/chapters/:name</code>.</li>
+<li>System executes parallel API requests (<code>/units/:name</code>, <code>/events?unit=:name</code>, <code>/units/:id/officers</code>, <code>/gallery</code>).</li>
+<li>UI displays branded theme gradient, officer cards with avatars, and filtered activity list.</li>
+<li><strong>Acceptance Criteria</strong>: All 4 chapters render real data without hardcoding; fallback gradients display if no cover image exists.</li>
+<li><strong>Definition of Done</strong>: Verified across CIS, CS, SPS, and WIE.</li>
+</ul>
+<h4>Use Case UC-04: Chapter Join Request Pipeline</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As an engineering student, I want to request membership in a technical chapter so that I can participate in specialized initiatives.</em></li>
+<li><strong>Objective</strong>: Create trackable membership requests and allow Chapter Admins to review and approve them.</li>
+<li><strong>Trigger</strong>: User clicks "Join Chapter" on the chapter page.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>Member submits <code>POST /api/chapters/:id/join-request</code>.</li>
+<li>Server checks user is not already a member and has no pending request.</li>
+<li>Request is created with status <code>pending</code>.</li>
+<li>Chapter Officer opens Officer Dashboard, views pending requests, and clicks "Approve".</li>
+<li>Server updates request to <code>approved</code> and appends unit ID to <code>user.chapterMemberships</code>.</li>
+<li><strong>Acceptance Criteria</strong>: Duplicate requests rejected with HTTP 400; approved members immediately see member badge and pricing discounts.</li>
+</ul>
+<h4>Use Case UC-06: Tiered Event Creation &amp; Publishing</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As a Chapter Admin, I want to create draft events and publish them with member/guest pricing tiers.</em></li>
+<li><strong>Objective</strong>: Manage the complete event publishing lifecycle.</li>
+<li><strong>Trigger</strong>: Chapter Admin submits event form on Officer Dashboard.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>Admin enters Title, Date, Venue, Description, Category, Member Fee (e.g. ₹0), General Fee (e.g. ₹50), and UPI ID.</li>
+<li>Server creates event with status <code>draft</code>.</li>
+<li>Admin reviews draft and clicks "Publish".</li>
+<li>Server updates status to <code>published</code> and triggers notification to all chapter members.</li>
+<li><strong>Acceptance Criteria</strong>: Draft events hidden from public portal; published events visible immediately.</li>
+</ul>
+<h4>Use Case UC-08: Dynamic QR Code Attendance Check-in</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As an event organizer, I want to generate a venue QR code so that attendees can check in instantly using their mobile cameras.</em></li>
+<li><strong>Objective</strong>: Provide automated check-in with fraud prevention.</li>
+<li><strong>Trigger</strong>: Chapter Admin clicks "Generate QR" for an active event.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>Server generates 32-character random hex token, saves it hashed on the event, and renders a QR code.</li>
+<li>Attendee scans QR code or clicks check-in link.</li>
+<li>Server validates token, matches user registration, and records check-in timestamp in <code>event.attendance</code>.</li>
+<li>Second check-in attempt by same user is rejected with HTTP 409 ("Already checked in").</li>
+<li><strong>Acceptance Criteria</strong>: Invalid or tampered tokens return HTTP 400; duplicate check-in rejected.</li>
+</ul>
+<h4>Use Case UC-09 &amp; UC-10: Automated Vector PDF Certificate Generation &amp; Verification</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As an attendee, I want to receive a verifiable PDF certificate and allow employers to verify its authenticity online.</em></li>
+<li><strong>Objective</strong>: Render high-resolution PDF certificates server-side and maintain an immutable public verification registry.</li>
+<li><strong>Trigger</strong>: Officer clicks "Generate Certificates" for event attendees.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>Server iterates over checked-in attendees in <code>event.attendance</code>.</li>
+<li>For each attendee, PDFKit renders vector text over the chapter certificate template image.</li>
+<li>A unique certificate ID (<code>IEEE-CIS-2026-XXXXX</code>) is generated and saved in MongoDB.</li>
+<li>The certificate PDF is dispatched as an email attachment via Nodemailer (<code>abinsoncs@gmail.com</code>).</li>
+<li>Any party navigating to <code>/verify-certificate?id=IEEE-CIS-2026-XXXXX</code> sees instant confirmation with recipient name, event, and issue date.</li>
+<li><strong>Acceptance Criteria</strong>: Invalid IDs return HTTP 404; valid IDs display official verification badge.</li>
+</ul>
+<h4>Use Case UC-12 &amp; UC-13: Geotagged Event Gallery &amp; Media Management</h4>
+<ul>
+<li><strong>User Story</strong>: <em>As an ExeCom Officer, I want to upload event photos with captions and GPS tags and select an album cover.</em></li>
+<li><strong>Objective</strong>: Provide a media gallery organized by event album.</li>
+<li><strong>Trigger</strong>: Officer uploads photos in the Gallery Upload Modal.</li>
+<li><strong>Main Success Scenario</strong>:</li>
+<li>Officer selects event, attaches up to 20 images (.jpg, .png, .webp, max 5MB each), inputs caption, and clicks "Capture GPS".</li>
+<li>Browser Geolocation API captures latitude and longitude.</li>
+<li>Files are streamed to server disk (<code>/uploads/events/</code>).</li>
+<li>Photos are aggregated by event; officer can click "⭐ Set Cover" to designate any photo as the album cover.</li>
+<li>Gallery grid displays albums in golden 16:10 aspect ratio without image stretching.</li>
+<li><strong>Acceptance Criteria</strong>: Deleting photo unlinks file from server disk; non-officers have read-only view.</li>
+</ul>
+<hr />
+<h1>CHAPTER 3. STORY POINT ESTIMATION</h1>
+<h3>3.1 ESTIMATION SCALE (MODIFIED FIBONACCI)</h3>
+<p>In Agile Scrum, story points reflect the relative complexity, technical uncertainty, and implementation effort rather than fixed clock hours. The team adopted the standard modified Fibonacci sequence:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Story Points (SP)</th>
+<th style="text-align: left;">Relative Complexity</th>
+<th style="text-align: left;">Implementation Interpretation in IEEE SB Portal</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>1</strong></td>
+<td style="text-align: left;">Negligible</td>
+<td style="text-align: left;">Trivial text or configuration change (e.g. metadata title update)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>2</strong></td>
+<td style="text-align: left;">Low</td>
+<td style="text-align: left;">Minor UI view or static endpoint (e.g. Public Notice Board view)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>3</strong></td>
+<td style="text-align: left;">Moderate</td>
+<td style="text-align: left;">Standard CRUD model with authentication (e.g. Profile editing, Email SMTP)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>5</strong></td>
+<td style="text-align: left;">High</td>
+<td style="text-align: left;">Multi-component workflow with state &amp; validation (e.g. Tiered Events, Join Requests)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>8</strong></td>
+<td style="text-align: left;">Very High</td>
+<td style="text-align: left;">Cryptographic or file-intensive pipelines (e.g. QR Check-in, PDFKit Certificate Engine)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>3.2 USER STORY ESTIMATION REGISTER</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">PBI ID</th>
+<th style="text-align: left;">User Story Title</th>
+<th style="text-align: center;">Priority</th>
+<th style="text-align: center;">SP</th>
+<th style="text-align: center;">Est. Hrs</th>
+<th style="text-align: center;">Assigned Role</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>US01</strong></td>
+<td style="text-align: left;">User Authentication &amp; JWT Session</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US02</strong></td>
+<td style="text-align: left;">User Profile, Email &amp; Password Change</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US03</strong></td>
+<td style="text-align: left;">Multi-Chapter Hub &amp; Switcher Ribbon</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Frontend Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US04</strong></td>
+<td style="text-align: left;">Chapter Membership &amp; Join Requests</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US05</strong></td>
+<td style="text-align: left;">Public Officer Directory &amp; Roster</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Frontend Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US06</strong></td>
+<td style="text-align: left;">Tiered Event Creation &amp; Publishing</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">Backend Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US07</strong></td>
+<td style="text-align: left;">Event Registration &amp; Payment Proof</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US08</strong></td>
+<td style="text-align: left;">Dynamic QR Attendance &amp; Check-in</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US09</strong></td>
+<td style="text-align: left;">Automated PDFKit Certificate Engine</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">8</td>
+<td style="text-align: center;">Backend Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US10</strong></td>
+<td style="text-align: left;">Public Certificate Verification Registry</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Frontend Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US11</strong></td>
+<td style="text-align: left;">Gmail SMTP Transactional Emailer</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Backend Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US12</strong></td>
+<td style="text-align: left;">Disk-Backed Event Photo Gallery</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">7</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US13</strong></td>
+<td style="text-align: left;">Gallery Edit, Cover Selection &amp; Deletion</td>
+<td style="text-align: center;">Must</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US14</strong></td>
+<td style="text-align: left;">ExeCom Duty Tasks &amp; Vacant Tracking</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US15</strong></td>
+<td style="text-align: left;">Public Notice Board with Pinning</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: center;">Frontend Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US16</strong></td>
+<td style="text-align: left;">Bento Grid Live Stats &amp; Advisor Digest</td>
+<td style="text-align: center;">Should</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">Full-Stack Dev</td>
+<td style="text-align: center;">Accepted</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TOTAL</strong></td>
+<td style="text-align: left;"><strong>16 User Stories</strong></td>
+<td style="text-align: center;">—</td>
+<td style="text-align: center;"><strong>57 SP</strong></td>
+<td style="text-align: center;"><strong>89 Hrs</strong></td>
+<td style="text-align: center;"><strong>Abinson Babu</strong></td>
+<td style="text-align: center;"><strong>100% Done</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>CHAPTER 4. RELEASE &amp; SPRINT PLAN</h1>
+<h3>4.1 PRODUCT BACKLOG PRIORITIZATION (MoSCoW)</h3>
+<ul>
+<li><strong>Must Have (44 SP / 77.2%)</strong>: US01, US02, US03, US04, US06, US07, US08, US09, US10, US11, US12, US13. Core capabilities necessary for portal launch.</li>
+<li><strong>Should Have (13 SP / 22.8%)</strong>: US05, US14, US15, US16. Essential executive management and institutional reporting features.</li>
+<li><strong>Could Have (0 SP)</strong>: Deferred to future post-graduate release (e.g. push notification mobile app).</li>
+</ul>
+<hr />
+<h3>4.2 SPRINT-WISE IMPLEMENTATION SCHEDULE</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Sprint</th>
+<th style="text-align: center;">Timeline</th>
+<th style="text-align: left;">Sprint Objective &amp; Focus</th>
+<th style="text-align: center;">User Stories</th>
+<th style="text-align: center;">SP</th>
+<th style="text-align: center;">Est. Hrs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Sprint 1</strong></td>
+<td style="text-align: center;">Weeks 1–2</td>
+<td style="text-align: left;">Full-Stack Setup, JWT Auth, Profile &amp; Password Engine</td>
+<td style="text-align: center;">US01, US02</td>
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 2</strong></td>
+<td style="text-align: center;">Weeks 3–4</td>
+<td style="text-align: left;">Multi-Chapter Hub, Switcher Ribbon, Join Requests</td>
+<td style="text-align: center;">US03, US04, US05</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">15</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 3</strong></td>
+<td style="text-align: center;">Weeks 5–6</td>
+<td style="text-align: left;">Tiered Events Engine, Registrations &amp; UPI Payment Proof</td>
+<td style="text-align: center;">US06, US07</td>
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">14</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 4</strong></td>
+<td style="text-align: center;">Weeks 7–8</td>
+<td style="text-align: left;">Dynamic QR Attendance, PDFKit Certificates &amp; Verification</td>
+<td style="text-align: center;">US08, US09, US10</td>
+<td style="text-align: center;">12</td>
+<td style="text-align: center;">20</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 5</strong></td>
+<td style="text-align: center;">Weeks 9–10</td>
+<td style="text-align: left;">Gmail SMTP Integration, Disk Gallery &amp; Photo Management</td>
+<td style="text-align: center;">US11, US12, US13</td>
+<td style="text-align: center;">11</td>
+<td style="text-align: center;">17</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 6</strong></td>
+<td style="text-align: center;">Weeks 11–12</td>
+<td style="text-align: left;">Duty Task Management, Public Notice Board &amp; Audit Logs</td>
+<td style="text-align: center;">US14, US15</td>
+<td style="text-align: center;">5</td>
+<td style="text-align: center;">9</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 7</strong></td>
+<td style="text-align: center;">Weeks 13–14</td>
+<td style="text-align: left;">Bento Grid Stats, Advisor Digest, E2E Polish &amp; Acceptance</td>
+<td style="text-align: center;">US16</td>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">5</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TOTAL</strong></td>
+<td style="text-align: center;"><strong>14 Weeks</strong></td>
+<td style="text-align: left;"><strong>Complete Full-Stack Application Delivery</strong></td>
+<td style="text-align: center;"><strong>US01–US16</strong></td>
+<td style="text-align: center;"><strong>57</strong></td>
+<td style="text-align: center;"><strong>89</strong></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>4.3 ARCHITECTURAL OVERVIEW</h3>
+<p>The application implements a clean <strong>Four-Tier Architecture</strong>:</p>
+<pre><code class="language-mermaid">flowchart TD
+    subgraph Presentation[&quot;Presentation Tier (Client - React 19)&quot;]
+        UI[&quot;React SPA Components &amp; Pages&quot;]
+        Router[&quot;React Router v7 (Protected Routes)&quot;]
+        Axios[&quot;Axios Interceptor (Bearer JWT)&quot;]
+    end
+
+    subgraph Application[&quot;Application Logic Tier (Node.js &amp; Express)&quot;]
+        AuthMid[&quot;Auth &amp; RBAC Middleware&quot;]
+        Controllers[&quot;Controllers: Auth, Event, Cert, Gallery, Task&quot;]
+        Multer[&quot;Multer Streaming Engine&quot;]
+    end
+
+    subgraph Service[&quot;External Service Tier&quot;]
+        SMTP[&quot;Gmail SMTP (abinsoncs@gmail.com)&quot;]
+        PDF[&quot;PDFKit Vector Generator&quot;]
+    end
+
+    subgraph Data[&quot;Data Tier&quot;]
+        Mongo[(&quot;MongoDB (Collections: Users, Events, Certs, Photos, Tasks, Notices)&quot;)]
+        Disk[(&quot;Server Local Disk (/uploads/events, /uploads/profiles)&quot;)]
+    end
+
+    Presentation --&gt; Application
+    Application --&gt; Service
+    Application --&gt; Data
+</code></pre>
+<hr />
+<h3>4.4 LOGICAL DATA MODEL (ER CONCEPT)</h3>
+<pre><code class="language-mermaid">erDiagram
+    USER ||--o{ EVENT_REGISTRATION : creates
+    USER ||--o{ ATTENDANCE : marks
+    USER ||--o{ CERTIFICATE : receives
+    USER ||--o{ CHAPTER_JOIN_REQUEST : submits
+    USER ||--o{ TASK : assigned
+    UNIT ||--o{ EVENT : organizes
+    UNIT ||--o{ POSITION_TEMPLATE : defines
+    UNIT ||--o{ CHAPTER_JOIN_REQUEST : targets
+    EVENT ||--o{ EVENT_REGISTRATION : records
+    EVENT ||--o{ ATTENDANCE : logs
+    EVENT ||--o{ CERTIFICATE : issues
+    EVENT ||--o{ EVENT_PHOTO : contains
+
+    USER {
+        ObjectId _id PK
+        string name
+        string email UK
+        string passwordHash
+        string globalRole
+        string profilePhoto
+        Array chapterMemberships
+    }
+
+    UNIT {
+        ObjectId _id PK
+        string name UK
+        string code UK
+        string description
+        string coverImage
+    }
+
+    EVENT {
+        ObjectId _id PK
+        ObjectId unit FK
+        string title
+        date date
+        string venue
+        boolean isPaid
+        number fee
+        number memberFee
+        string qrToken
+        string status
+    }
+
+    CERTIFICATE {
+        ObjectId _id PK
+        string certificateId UK
+        ObjectId user FK
+        ObjectId event FK
+        string participantName
+        string pdfPath
+        date issuedAt
+    }
+
+    EVENT_PHOTO {
+        ObjectId _id PK
+        ObjectId event FK
+        ObjectId uploadedBy FK
+        string filename
+        string url
+        string caption
+        boolean isCover
+        object geoLocation
+    }
+</code></pre>
+<hr />
+<h1>CHAPTER 5. PROJECT PROGRESS AND MANAGEMENT</h1>
+<h3>5.1 SPRINT 1 – AUTHENTICATION, ROLES &amp; PROFILE MANAGEMENT</h3>
+<ul>
+<li><strong>Sprint Objective</strong>: Establish the MERN architecture, deploy JWT token authorization, and implement profile editing with password verification.</li>
+<li><strong>Sprint Board</strong>:</li>
+<li><code>US01 (Authentication)</code>: Done.</li>
+<li><code>US02 (Profile &amp; Password Change)</code>: Done.</li>
+<li><strong>Daily Scrum Highlights</strong>:</li>
+<li><em>Day 2</em>: Configured Express server on port 5000 and React on port 3000.</li>
+<li><em>Day 5</em>: Implemented <code>authMiddleware</code> and <code>roleMiddleware</code> enforcing 5 distinct user roles.</li>
+<li><em>Day 8</em>: Verified email change deduplication in MongoDB and bcrypt comparison for password modification.</li>
+<li><strong>Review &amp; Demo</strong>: Successfully demonstrated user registration, login redirection, and changing email/password without session corruption.</li>
+<li><strong>Retrospective</strong>: Early decision to verify old password before hashing new password prevented account takeover vectors.</li>
+</ul>
+<hr />
+<h3>5.2 SPRINT 2 – MULTI-CHAPTER ARCHITECTURE &amp; MEMBERSHIP</h3>
+<ul>
+<li><strong>Sprint Objective</strong>: Implement chapter pages for CS, CIS, SPS, and WIE, with chapter join request pipelines and officer rosters.</li>
+<li><strong>Sprint Board</strong>:</li>
+<li><code>US03 (Multi-Chapter Hub)</code>: Done.</li>
+<li><code>US04 (Join Request Pipeline)</code>: Done.</li>
+<li><code>US05 (Officer Directory)</code>: Done.</li>
+<li><strong>Daily Scrum Highlights</strong>:</li>
+<li><em>Day 3</em>: Built the interactive Chapter Switcher Ribbon on <code>/chapters/:name</code>.</li>
+<li><em>Day 7</em>: Implemented <code>POST /api/chapters/:id/join-request</code> preventing duplicate pending requests.</li>
+<li><strong>Review &amp; Demo</strong>: Demonstrated switching chapters seamlessly; demonstrated officer approving a student's join request.</li>
+<li><strong>Retrospective</strong>: Parallel API fetching (<code>Promise.all</code>) on chapter pages reduced page loading time by 60%.</li>
+</ul>
+<hr />
+<h3>5.3 SPRINT 3 – EVENT LIFECYCLE &amp; TIERED REGISTRATION</h3>
+<ul>
+<li><strong>Sprint Objective</strong>: Implement event management with dual-tier pricing and UPI payment proof upload.</li>
+<li><strong>Sprint Board</strong>:</li>
+<li><code>US06 (Event Publishing)</code>: Done.</li>
+<li><code>US07 (Registration &amp; Payment Proof)</code>: Done.</li>
+<li><strong>Daily Scrum Highlights</strong>:</li>
+<li><em>Day 4</em>: Implemented event draft vs published state filtering.</li>
+<li><em>Day 8</em>: Built UPI payment proof screenshot upload with client-side base64 preview and officer approval status.</li>
+<li><strong>Review &amp; Demo</strong>: Demonstrated active IEEE members receiving automatic ₹0 free registration, while guest users were prompted for UPI ID and payment screenshot.</li>
+</ul>
+<hr />
+<h3>5.4 SPRINT 4 – DYNAMIC QR ATTENDANCE &amp; AUTOMATED CERTIFICATES</h3>
+<ul>
+<li><strong>Sprint Objective</strong>: Deploy QR attendance check-in and dynamic vector PDF certificate generation with public verification.</li>
+<li><strong>Sprint Board</strong>:</li>
+<li><code>US08 (QR Code Attendance)</code>: Done.</li>
+<li><code>US09 (Automated PDFKit Certificates)</code>: Done.</li>
+<li><code>US10 (Public Certificate Registry)</code>: Done.</li>
+<li><strong>Daily Scrum Highlights</strong>:</li>
+<li><em>Day 4</em>: Engineered 32-character random hex token generator embedded in venue QR code.</li>
+<li><em>Day 7</em>: Implemented PDFKit server-side generator rendering vector certificates with unique IDs (<code>IEEE-CIS-2026-XXXXX</code>).</li>
+<li><em>Day 9</em>: Deployed public certificate verification page at <code>/verify-certificate</code>.</li>
+<li><strong>Review &amp; Demo</strong>: Scanned venue QR code on mobile; attendee status updated in real-time; certificate generated and verified publicly.</li>
+</ul>
+<hr />
+<h3>5.5 SPRINT 5 – GMAIL SMTP &amp; EVENT PHOTO GALLERY</h3>
+<ul>
+<li><strong>Sprint Objective</strong>: Connect Gmail SMTP (<code>abinsoncs@gmail.com</code>) for transactional emails, and build disk-backed geotagged photo albums.</li>
+<li><strong>Sprint Board</strong>:</li>
+<li><code>US11 (Gmail SMTP Emailer)</code>: Done.</li>
+<li><code>US12 (Disk Event Gallery)</code>: Done.</li>
+<li><code>US13 (Gallery Caption &amp; Cover Edit)</code>: Done.</li>
+<li><strong>Daily Scrum Highlights</strong>:</li>
+<li><em>Day 3</em>: Configured Nodemailer with Google App Password; verified SMTP handshake.</li>
+<li><em>Day 6</em>: Built multi-photo batch upload with Multer storing relative URLs on disk (<code>server/uploads/events/</code>).</li>
+<li><em>Day 9</em>: Implemented <code>getMediaUrl()</code> resolver and golden 16:10 aspect ratio card grid.</li>
+<li><strong>Review &amp; Demo</strong>: Issued certificate delivered directly to Gmail inbox with PDF attachment; uploaded photos displayed with captions and GPS tags.</li>
+</ul>
+<hr />
+<h3>5.6 SPRINT 6 – DUTY TASKS, NOTICES &amp; AUDIT LOGS</h3>
+<ul>
+<li><strong>Sprint Objective</strong>: Implement officer duty task boards, public notices, and administrative audit logging.</li>
+<li><strong>Sprint Board</strong>:</li>
+<li><code>US14 (Officer Tasks)</code>: Done.</li>
+<li><code>US15 (Notice Board)</code>: Done.</li>
+<li><strong>Daily Scrum Highlights</strong>:</li>
+<li><em>Day 3</em>: Built task assignment with status toggling (<code>todo</code>, <code>in_progress</code>, <code>done</code>).</li>
+<li><em>Day 6</em>: Deployed Public Notice Board with priority pinning (<code>isPinned: true</code>).</li>
+<li><strong>Review &amp; Demo</strong>: Demonstrated chapter chairs delegating tasks and reviewing active chapter rosters.</li>
+</ul>
+<hr />
+<h3>5.7 SPRINT 7 – LIVE BENTO STATS, ADVISOR DIGEST &amp; E2E ACCEPTANCE</h3>
+<ul>
+<li><strong>Sprint Objective</strong>: Deploy live public impact counters, automated faculty advisor digest, and complete final end-to-end verification.</li>
+<li><strong>Sprint Board</strong>:</li>
+<li><code>US16 (Bento Grid Stats &amp; Digest)</code>: Done.</li>
+<li><strong>Daily Scrum Highlights</strong>:</li>
+<li><em>Day 3</em>: Built Bento Grid stats counter fetching live data from <code>/api/stats/public</code>.</li>
+<li><em>Day 7</em>: Implemented Advisor Digest compiling monthly metrics into an HTML email to faculty advisors.</li>
+<li><em>Day 9</em>: Ran automated test suites: 44/44 E2E checks passed, 34/34 polish checks passed, 18/18 profile checks passed.</li>
+<li><strong>Review &amp; Demo</strong>: Final comprehensive product demo showcasing all 16 user stories operational with 0 errors.</li>
+</ul>
+<hr />
+<h1>CHAPTER 6. BURNDOWN MONITORING</h1>
+<h3>6.1 SPRINT BURNDOWN ANALYSIS</h3>
+<p>The project maintained a planned effort of <strong>89 hours</strong> across 7 sprints. The remaining effort was inspected at regular two-day intervals during each 10-day sprint cycle.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Sprint</th>
+<th style="text-align: center;">Baseline Effort</th>
+<th style="text-align: center;">Day 0</th>
+<th style="text-align: center;">Day 2</th>
+<th style="text-align: center;">Day 4</th>
+<th style="text-align: center;">Day 6</th>
+<th style="text-align: center;">Day 8</th>
+<th style="text-align: center;">Day 10 (Actual)</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Sprint 1</strong></td>
+<td style="text-align: center;">9 hrs</td>
+<td style="text-align: center;">9.0</td>
+<td style="text-align: center;">7.5</td>
+<td style="text-align: center;">5.0</td>
+<td style="text-align: center;">3.0</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;"><strong>0.0</strong></td>
+<td style="text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 2</strong></td>
+<td style="text-align: center;">15 hrs</td>
+<td style="text-align: center;">15.0</td>
+<td style="text-align: center;">12.0</td>
+<td style="text-align: center;">9.0</td>
+<td style="text-align: center;">6.0</td>
+<td style="text-align: center;">2.5</td>
+<td style="text-align: center;"><strong>0.0</strong></td>
+<td style="text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 3</strong></td>
+<td style="text-align: center;">14 hrs</td>
+<td style="text-align: center;">14.0</td>
+<td style="text-align: center;">11.5</td>
+<td style="text-align: center;">8.5</td>
+<td style="text-align: center;">5.5</td>
+<td style="text-align: center;">2.0</td>
+<td style="text-align: center;"><strong>0.0</strong></td>
+<td style="text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 4</strong></td>
+<td style="text-align: center;">20 hrs</td>
+<td style="text-align: center;">20.0</td>
+<td style="text-align: center;">16.0</td>
+<td style="text-align: center;">11.5</td>
+<td style="text-align: center;">7.0</td>
+<td style="text-align: center;">3.0</td>
+<td style="text-align: center;"><strong>0.0</strong></td>
+<td style="text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 5</strong></td>
+<td style="text-align: center;">17 hrs</td>
+<td style="text-align: center;">17.0</td>
+<td style="text-align: center;">13.5</td>
+<td style="text-align: center;">9.5</td>
+<td style="text-align: center;">6.0</td>
+<td style="text-align: center;">2.0</td>
+<td style="text-align: center;"><strong>0.0</strong></td>
+<td style="text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 6</strong></td>
+<td style="text-align: center;">9 hrs</td>
+<td style="text-align: center;">9.0</td>
+<td style="text-align: center;">7.0</td>
+<td style="text-align: center;">5.0</td>
+<td style="text-align: center;">3.0</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;"><strong>0.0</strong></td>
+<td style="text-align: center;">Completed</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 7</strong></td>
+<td style="text-align: center;">5 hrs</td>
+<td style="text-align: center;">5.0</td>
+<td style="text-align: center;">4.0</td>
+<td style="text-align: center;">2.5</td>
+<td style="text-align: center;">1.0</td>
+<td style="text-align: center;">0.5</td>
+<td style="text-align: center;"><strong>0.0</strong></td>
+<td style="text-align: center;">Completed</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>6.2 CUMULATIVE PRODUCT BURNDOWN</h3>
+<pre><code class="language-mermaid">xychart-beta
+    title &quot;Cumulative Product Burndown (Planned vs Actual Hours Remaining)&quot;
+    x-axis [&quot;Start&quot;, &quot;Sprint 1&quot;, &quot;Sprint 2&quot;, &quot;Sprint 3&quot;, &quot;Sprint 4&quot;, &quot;Sprint 5&quot;, &quot;Sprint 6&quot;, &quot;Sprint 7&quot;]
+    y-axis &quot;Hours Remaining&quot; 0 --&gt; 90
+    line &quot;Ideal Plan&quot; [89, 80, 65, 51, 31, 14, 5, 0]
+    line &quot;Actual Progress&quot; [89, 79, 64, 50, 29, 13, 4, 0]
+</code></pre>
+<hr />
+<h1>CHAPTER 7. SCRUM CEREMONY EVIDENCE REGISTER</h1>
+<h3>7.1 DAILY SCRUM CONSOLIDATION SAMPLES</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Checkpoint</th>
+<th style="text-align: center;">Sprint</th>
+<th style="text-align: left;">Planned Focus</th>
+<th style="text-align: left;">Progress Inspected</th>
+<th style="text-align: left;">Impediments / Resolution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>S1-DS03</strong></td>
+<td style="text-align: center;">Sprint 1</td>
+<td style="text-align: left;">JWT Middleware &amp; RBAC</td>
+<td style="text-align: left;">Created <code>authMiddleware</code> &amp; <code>roleMiddleware</code></td>
+<td style="text-align: left;">Handled token expiry gracefully</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S2-DS05</strong></td>
+<td style="text-align: center;">Sprint 2</td>
+<td style="text-align: left;">Chapter Ribbon &amp; Unit API</td>
+<td style="text-align: left;">Rendered 4 chapter routes dynamically</td>
+<td style="text-align: left;">Built fallback gradient for units without banner</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S3-DS04</strong></td>
+<td style="text-align: center;">Sprint 3</td>
+<td style="text-align: left;">Tiered Event Pricing Logic</td>
+<td style="text-align: left;">Linked member status with ₹0 fee waiver</td>
+<td style="text-align: left;">Prevented duplicate registrations via index</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S4-DS06</strong></td>
+<td style="text-align: center;">Sprint 4</td>
+<td style="text-align: left;">PDFKit Vector Certificate</td>
+<td style="text-align: left;">Renders participant name and event date</td>
+<td style="text-align: left;">Configured custom font coordinate offsets</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S4-DS08</strong></td>
+<td style="text-align: center;">Sprint 4</td>
+<td style="text-align: left;">Public Verification Endpoint</td>
+<td style="text-align: left;"><code>/verify-certificate/:certId</code> online</td>
+<td style="text-align: left;">Resolved route matching precedence</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S5-DS04</strong></td>
+<td style="text-align: center;">Sprint 5</td>
+<td style="text-align: left;">Gmail SMTP Configuration</td>
+<td style="text-align: left;">Verified SMTP handshake with Google App Pass</td>
+<td style="text-align: left;">Handled password whitespaces safely</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S5-DS07</strong></td>
+<td style="text-align: center;">Sprint 5</td>
+<td style="text-align: left;">Gallery Aspect Ratio Fix</td>
+<td style="text-align: left;">Replaced fixed 180px with golden 16:10</td>
+<td style="text-align: left;">Card never stretches on single-item loads</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S6-DS03</strong></td>
+<td style="text-align: center;">Sprint 6</td>
+<td style="text-align: left;">ExeCom Duty Tasks Board</td>
+<td style="text-align: left;">Officers update task status in real-time</td>
+<td style="text-align: left;">Implemented oversight role check for creation</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>S7-DS05</strong></td>
+<td style="text-align: center;">Sprint 7</td>
+<td style="text-align: left;">End-to-End Suite Execution</td>
+<td style="text-align: left;">Ran 44 automated test scripts</td>
+<td style="text-align: left;">All 44 checks passed with 0 failures</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>7.2 IMPEDIMENT &amp; RESOLUTION REGISTER</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Sprint</th>
+<th style="text-align: left;">Identified Impediment</th>
+<th style="text-align: left;">Technical Resolution Applied</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>Sprint 1</strong></td>
+<td style="text-align: left;">Stale email in localStorage after profile update</td>
+<td style="text-align: left;">Updated <code>AuthContext</code> to sync updated user object immediately</td>
+<td style="text-align: center;">Resolved</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 4</strong></td>
+<td style="text-align: left;">Duplicate attendance QR scans at event venue</td>
+<td style="text-align: left;">Applied compound index <code>{ event: 1, user: 1 }</code> in attendance sub-schema</td>
+<td style="text-align: center;">Resolved</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 5</strong></td>
+<td style="text-align: left;">Broken image icons on React port 3000</td>
+<td style="text-align: left;">Created central <code>getMediaUrl</code> prepending Express port 5000</td>
+<td style="text-align: center;">Resolved</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>Sprint 5</strong></td>
+<td style="text-align: left;">Extreme horizontal card cropping on single albums</td>
+<td style="text-align: left;">Bounded grid columns to <code>minmax(300px, 360px)</code> with <code>aspectRatio: "16 / 10"</code></td>
+<td style="text-align: center;">Resolved</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1>CHAPTER 8. GITHUB / VERSION CONTROL</h1>
+<h3>8.1 REPOSITORY STRUCTURE</h3>
+<p>The project source code is organized into a clean, decoupled full-stack architecture:</p>
+<pre><code>ieee-sb-portal/
+├── client/                     # Frontend React.js 19 SPA
+│   ├── public/                 # Static assets &amp; Chapter logos
+│   │   └── logos/              # IEEE, CS, CIS, SPS, WIE official marks
+│   ├── src/
+│   │   ├── api/                # Axios instance with JWT interceptor
+│   │   ├── components/         # Reusable UI (Navbar, Footer, UserAvatar, EventCard)
+│   │   ├── context/            # Global AuthContext &amp; state
+│   │   ├── pages/              # Routed pages (Home, ChapterPage, GalleryPage, Events)
+│   │   └── utils/              # mediaUtils (URL resolvers)
+│   └── package.json
+│
+├── server/                     # Backend Node.js &amp; Express REST API
+│   ├── controllers/            # Business logic (auth, events, certs, photos, tasks)
+│   ├── middleware/             # authMiddleware, roleMiddleware, uploadMiddleware
+│   ├── models/                 # Mongoose schemas (User, Event, Certificate, EventPhoto)
+│   ├── routes/                 # Express route declarations
+│   ├── scripts/                # Automated verification suites (test-e2e-all.js)
+│   ├── uploads/                # Disk storage (events, certificate-templates, profiles)
+│   ├── utils/                  # emailTransporter (Gmail SMTP), notify.js
+│   ├── .env                    # Environment configuration
+│   ├── server.js               # Entry point
+│   └── package.json
+└── README.md
+</code></pre>
+<h3>8.2 BRANCHING STRATEGY &amp; COMMIT CONVENTIONS</h3>
+<p>The development strictly enforced conventional commit prefixes:
+- <code>feat:</code> New capabilities (e.g., <code>feat: dynamic qr attendance engine</code>)
+- <code>fix:</code> Defect resolutions (e.g., <code>fix: resolve relative image url on port 3000</code>)
+- <code>test:</code> Test suites (e.g., <code>test: add automated profile email and password e2e</code>)
+- <code>docs:</code> Documentation updates (e.g., <code>docs: finalize scrum sprint evidence register</code>)</p>
+<hr />
+<h1>CHAPTER 9. TESTING AND ACCEPTANCE</h1>
+<h3>9.1 TESTING STRATEGY</h3>
+<p>Testing was executed across three rigorous levels:
+1. <strong>Unit Testing</strong>: Validation helpers, password strength requirements, and URL resolvers.
+2. <strong>Integration Testing</strong>: Communication between Express REST controllers, MongoDB collections, Multer file streams, and Gmail SMTP.
+3. <strong>Automated End-to-End (E2E) Testing</strong>: Complete user journey scripts simulating HTTP requests from registration to payment approval, QR attendance, certificate PDF generation, and public verification.</p>
+<hr />
+<h3>9.2 COMPREHENSIVE TEST CASE EXECUTION RESULTS</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">Test ID</th>
+<th style="text-align: left;">Test Scenario</th>
+<th style="text-align: left;">Execution Procedure</th>
+<th style="text-align: left;">Expected Result</th>
+<th style="text-align: left;">Actual Result</th>
+<th style="text-align: center;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>TC-01</strong></td>
+<td style="text-align: left;">User Registration</td>
+<td style="text-align: left;">Submit <code>POST /api/auth/register</code></td>
+<td style="text-align: left;">User document created; password hashed</td>
+<td style="text-align: left;">Status 201; password encrypted</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-02</strong></td>
+<td style="text-align: left;">User Login &amp; JWT</td>
+<td style="text-align: left;">Submit <code>POST /api/auth/login</code></td>
+<td style="text-align: left;">Returns signed JWT &amp; user payload</td>
+<td style="text-align: left;">Status 200; token attached</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-03</strong></td>
+<td style="text-align: left;">RBAC Protection</td>
+<td style="text-align: left;">Member calls <code>/api/admin/overview</code></td>
+<td style="text-align: left;">Access rejected with HTTP 403 Forbidden</td>
+<td style="text-align: left;">Status 403; access denied</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-04</strong></td>
+<td style="text-align: left;">Email Change Deduplication</td>
+<td style="text-align: left;">Update profile email to existing</td>
+<td style="text-align: left;">Rejected with HTTP 409 Conflict</td>
+<td style="text-align: left;">Status 400/409; duplicate blocked</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-05</strong></td>
+<td style="text-align: left;">Change Password Verification</td>
+<td style="text-align: left;">Submit incorrect current password</td>
+<td style="text-align: left;">Rejected with HTTP 400 Bad Request</td>
+<td style="text-align: left;">Status 400; message clear</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-06</strong></td>
+<td style="text-align: left;">Chapter Switcher Ribbon</td>
+<td style="text-align: left;">Navigate to <code>/chapters/CIS</code></td>
+<td style="text-align: left;">Renders CIS focus areas &amp; officers</td>
+<td style="text-align: left;">Status 200; CIS details rendered</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-07</strong></td>
+<td style="text-align: left;">Chapter Join Pipeline</td>
+<td style="text-align: left;">Submit join request to CIS</td>
+<td style="text-align: left;">Pending request created; no duplicate</td>
+<td style="text-align: left;">Status 201; pending recorded</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-08</strong></td>
+<td style="text-align: left;">Tiered Event Pricing</td>
+<td style="text-align: left;">Member vs Guest checkout</td>
+<td style="text-align: left;">Member gets ₹0; Guest gets fee + UPI</td>
+<td style="text-align: left;">Status 200; pricing differentiated</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-09</strong></td>
+<td style="text-align: left;">Dynamic QR Code Token</td>
+<td style="text-align: left;">Generate QR on published event</td>
+<td style="text-align: left;">32-char hex token generated</td>
+<td style="text-align: left;">Status 200; QR rendered</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-10</strong></td>
+<td style="text-align: left;">QR Check-in Execution</td>
+<td style="text-align: left;">Submit <code>POST /events/:id/checkin</code></td>
+<td style="text-align: left;">Attendance marked; timestamp logged</td>
+<td style="text-align: left;">Status 200; attendee added</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-11</strong></td>
+<td style="text-align: left;">Duplicate Check-in Block</td>
+<td style="text-align: left;">Scan check-in token second time</td>
+<td style="text-align: left;">Rejected with HTTP 409 Conflict</td>
+<td style="text-align: left;">Status 409; duplicate rejected</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-12</strong></td>
+<td style="text-align: left;">Vector PDF Certificate</td>
+<td style="text-align: left;">Trigger certificate generation</td>
+<td style="text-align: left;">PDFKit renders PDF; unique ID issued</td>
+<td style="text-align: left;">Status 200; PDF created</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-13</strong></td>
+<td style="text-align: left;">Public Certificate Verify</td>
+<td style="text-align: left;">GET <code>/certificates/verify/:id</code></td>
+<td style="text-align: left;">Returns <code>valid: true</code> and metadata</td>
+<td style="text-align: left;">Status 200; verified publicly</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-14</strong></td>
+<td style="text-align: left;">Transactional Gmail SMTP</td>
+<td style="text-align: left;">Trigger certificate issuance</td>
+<td style="text-align: left;">PDF delivered via <code>abinsoncs@gmail.com</code></td>
+<td style="text-align: left;">SMTP Handshake OK (200)</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-15</strong></td>
+<td style="text-align: left;">Disk Media Gallery Upload</td>
+<td style="text-align: left;">Stream 2 JPEG images via Multer</td>
+<td style="text-align: left;">Saved to disk; URLs stored in DB</td>
+<td style="text-align: left;">Status 201; files on disk</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>TC-16</strong></td>
+<td style="text-align: left;">Gallery Aspect Ratio</td>
+<td style="text-align: left;">Load single album on Home page</td>
+<td style="text-align: left;">Bounded 16:10 card without stretch</td>
+<td style="text-align: left;">Status 200; perfect framing</td>
+<td style="text-align: center;"><strong>PASS</strong></td>
+</tr>
+</tbody>
+</table>
+<h4>Automated Verification Summary</h4>
+<ul>
+<li><code>test-e2e-all.js</code>: <strong>44 / 44 checks passed (0 failed)</strong></li>
+<li><code>test-sprint-polish.js</code>: <strong>34 / 34 checks passed (0 failed)</strong></li>
+<li><code>test-profile-email-and-password.js</code>: <strong>18 / 18 checks passed (0 failed)</strong></li>
+<li><code>test-gallery-edit.js</code>: <strong>All tests passed (PATCH + DELETE verified)</strong></li>
+</ul>
+<hr />
+<h1>CHAPTER 10. FINAL PRODUCT EVIDENCE</h1>
+<h3>10.1 APPLICATION WALKTHROUGH &amp; SCREENSHOT EVIDENCE</h3>
+<ol>
+<li><strong>Public Portal &amp; Bento Grid Hero (<code>Figure 10.1</code>)</strong>:</li>
+<li>Header with IEEE Phoenix emblem and authentic clean <code>STUDENT BRANCH</code> mark.</li>
+<li>Verified badge: <code>IEEE Student Branch • SNGCE</code>.</li>
+<li>Bento Grid Live Impact Stats displaying real metrics: Events Conducted, Certificates Issued, Active Members, and Chapters.</li>
+<li>
+<p>Recent Event Highlights showcasing event photos in golden 16:10 aspect ratio.</p>
+</li>
+<li>
+<p><strong>Chapter Operational Hub (<code>Figure 10.2</code>)</strong>:</p>
+</li>
+<li>Chapter Switcher Ribbon facilitating one-click switching between CS, CIS, SPS, and WIE.</li>
+<li>Branded banner with officer directory cards, member counts, and filtered event schedules.</li>
+<li>
+<p>Dedicated "Chapter Moments &amp; Gallery" section displaying chapter albums.</p>
+</li>
+<li>
+<p><strong>Tiered Event Details &amp; QR Attendance Check-in (<code>Figure 10.3</code>)</strong>:</p>
+</li>
+<li>Dynamic registration modal supporting free member passes or UPI transaction ID proof upload.</li>
+<li>
+<p>Mobile-responsive venue QR check-in scanner modal validating attendees in under 2 seconds.</p>
+</li>
+<li>
+<p><strong>Public Certificate Verification Registry (<code>Figure 10.4</code>)</strong>:</p>
+</li>
+<li>Standalone, zero-login public verification interface (<code>/verify-certificate</code>).</li>
+<li>
+<p>Entering certificate ID (<code>IEEE-CIS-2026-XXXXX</code>) returns verified badge, recipient name, event title, and date.</p>
+</li>
+<li>
+<p><strong>Geotagged Photo Gallery &amp; Album Management (<code>Figure 10.5</code>)</strong>:</p>
+</li>
+<li>Album expanded modal displaying event photos with captions and GPS coordinates.</li>
+<li>ExeCom quick-action toolbar enabling caption editing, cover photo selection (<code>⭐ Set Cover</code>), and deletion.</li>
+</ol>
+<hr />
+<h3>10.2 REQUIREMENT-TO-EVIDENCE TRACEABILITY MATRIX</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;">PBI ID</th>
+<th style="text-align: left;">Implemented Feature</th>
+<th style="text-align: left;">Primary Codebase Reference</th>
+<th style="text-align: left;">Verification Test Suite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><strong>US01</strong></td>
+<td style="text-align: left;">JWT Authentication &amp; RBAC</td>
+<td style="text-align: left;"><code>server/middleware/authMiddleware.js</code></td>
+<td style="text-align: left;"><code>test-e2e-all.js</code> (Auth Checks)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US02</strong></td>
+<td style="text-align: left;">Profile, Email &amp; Password Change</td>
+<td style="text-align: left;"><code>server/controllers/userController.js</code></td>
+<td style="text-align: left;"><code>test-profile-email-and-password.js</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US03</strong></td>
+<td style="text-align: left;">Chapter Hub &amp; Switcher Ribbon</td>
+<td style="text-align: left;"><code>client/src/pages/ChapterPage.js</code></td>
+<td style="text-align: left;">Manual &amp; E2E Chapter Route Suite</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US04</strong></td>
+<td style="text-align: left;">Chapter Join Request Pipeline</td>
+<td style="text-align: left;"><code>server/controllers/joinRequestController.js</code></td>
+<td style="text-align: left;"><code>test-sprint-polish.js</code> (Sec 3)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US05</strong></td>
+<td style="text-align: left;">Public Officer Directory</td>
+<td style="text-align: left;"><code>client/src/pages/Directory.js</code></td>
+<td style="text-align: left;"><code>test-e2e-all.js</code> (Directory Check)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US06</strong></td>
+<td style="text-align: left;">Tiered Event Publishing</td>
+<td style="text-align: left;"><code>server/controllers/eventsController.js</code></td>
+<td style="text-align: left;"><code>test-e2e-all.js</code> (Event Engine)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US07</strong></td>
+<td style="text-align: left;">Event Registration &amp; UPI Proof</td>
+<td style="text-align: left;"><code>client/src/pages/EventDetailPage.js</code></td>
+<td style="text-align: left;"><code>test-e2e-all.js</code> (Registration)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US08</strong></td>
+<td style="text-align: left;">Dynamic QR Attendance Engine</td>
+<td style="text-align: left;"><code>server/controllers/eventsController.js</code></td>
+<td style="text-align: left;"><code>test-e2e-all.js</code> (QR Check-in)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US09</strong></td>
+<td style="text-align: left;">Automated PDFKit Certificates</td>
+<td style="text-align: left;"><code>server/controllers/certificateController.js</code></td>
+<td style="text-align: left;"><code>test-sprint-polish.js</code> (Sec 5)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US10</strong></td>
+<td style="text-align: left;">Public Certificate Verification</td>
+<td style="text-align: left;"><code>client/src/pages/VerifyCertificatePage.js</code></td>
+<td style="text-align: left;"><code>test-sprint-polish.js</code> (Verify Check)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US11</strong></td>
+<td style="text-align: left;">Gmail SMTP Transactional Emailer</td>
+<td style="text-align: left;"><code>server/utils/emailTransporter.js</code></td>
+<td style="text-align: left;">Live Google SMTP Handshake Test</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US12</strong></td>
+<td style="text-align: left;">Disk-Backed Event Photo Gallery</td>
+<td style="text-align: left;"><code>server/controllers/photoController.js</code></td>
+<td style="text-align: left;"><code>test-sprint-polish.js</code> (Upload Check)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US13</strong></td>
+<td style="text-align: left;">Gallery Caption &amp; Cover Editing</td>
+<td style="text-align: left;"><code>client/src/pages/GalleryPage.js</code></td>
+<td style="text-align: left;"><code>test-gallery-edit.js</code></td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US14</strong></td>
+<td style="text-align: left;">ExeCom Duty Tasks Management</td>
+<td style="text-align: left;"><code>server/controllers/taskController.js</code></td>
+<td style="text-align: left;"><code>test-sprint-polish.js</code> (Sec 2)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US15</strong></td>
+<td style="text-align: left;">Public Notice Board with Pinning</td>
+<td style="text-align: left;"><code>server/controllers/noticeController.js</code></td>
+<td style="text-align: left;"><code>test-sprint-polish.js</code> (Sec 4)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><strong>US16</strong></td>
+<td style="text-align: left;">Bento Grid Stats &amp; Advisor Digest</td>
+<td style="text-align: left;"><code>server/controllers/analyticsController.js</code></td>
+<td style="text-align: left;"><code>test-sprint-polish.js</code> (Digest Check)</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3>10.3 FINAL PRODUCT ACCEPTANCE CONCLUSION</h3>
+<p>The <strong>IEEE SB SNGCE Portal</strong> has satisfied all acceptance criteria defined in the Product Backlog. All 16 user stories are fully implemented, integrated, and verified with zero critical defects. The system is ready for institutional deployment at Sree Narayana Gurukulam College of Engineering.</p>
+<hr />
+<h1>REFERENCES</h1>
+<ol>
+<li><strong>IEEE Student Activities Committee</strong>, <em>IEEE Student Branch Operations Guide</em>, IEEE Press, Piscataway, NJ, USA, 2024. [Online]. Available: <code>https://www.ieee.org/membership/students/</code></li>
+<li><strong>K. Schwaber and J. Sutherland</strong>, <em>The Scrum Guide: The Definitive Guide to Scrum: The Rules of the Game</em>, Scrum.org, 2020. [Online]. Available: <code>https://scrumguides.org/scrum-guide.html</code></li>
+<li><strong>E. Gamma, R. Helm, R. Johnson, and J. Vlissides</strong>, <em>Design Patterns: Elements of Reusable Object-Oriented Software</em>, Addison-Wesley, Reading, MA, USA, 1994.</li>
+<li><strong>M. Chodorow</strong>, <em>MongoDB: The Definitive Guide: Powerful and Scalable Data Storage</em>, 3rd ed., O'Reilly Media, Sebastopol, CA, USA, 2020.</li>
+<li><strong>A. Banks and E. Porcello</strong>, <em>Learning React: Modern Patterns for Developing React Apps</em>, 2nd ed., O'Reilly Media, Sebastopol, CA, USA, 2020.</li>
+<li><strong>M. Cantelon, M. Harter, T. J. Holowaychuk, and N. Rajlich</strong>, <em>Node.js in Action</em>, 2nd ed., Manning Publications, Shelter Island, NY, USA, 2017.</li>
+<li><strong>APJ Abdul Kalam Technological University (KTU)</strong>, <em>Master of Computer Applications (MCA) Curriculum &amp; Syllabi</em>, Thiruvananthapuram, Kerala, 2020. [Online]. Available: <code>https://ktu.edu.in/</code></li>
+<li><strong>Nodemailer Project</strong>, <em>Nodemailer Module Documentation for Node.js</em>, 2024. [Online]. Available: <code>https://nodemailer.com/</code></li>
+<li><strong>PDFKit Organization</strong>, <em>PDFKit: A JavaScript PDF generation library for Node and the browser</em>, 2024. [Online]. Available: <code>https://pdfkit.org/</code></li>
+<li><strong>React Router Team</strong>, <em>React Router v7 Documentation</em>, Remix Software, 2025. [Online]. Available: <code>https://reactrouter.com/</code></li>
+</ol>
+</body>
+</html>

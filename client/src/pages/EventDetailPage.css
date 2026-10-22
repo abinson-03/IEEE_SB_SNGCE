@@ -1,0 +1,226 @@
+/* EventDetailPage */
+
+.event-detail-shell { min-height: 80vh; background: var(--bg-alt); }
+
+.event-detail-hero {
+  background: var(--navy);
+  padding: var(--sp-2xl) 0 var(--sp-3xl);
+  border-bottom: 4px solid var(--ch-color, var(--primary));
+}
+
+.event-detail-back {
+  display: inline-block;
+  color: rgba(255,255,255,0.6);
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-bottom: var(--sp-lg);
+  transition: color var(--transition);
+}
+.event-detail-back:hover { color: #fff; text-decoration: none; }
+
+.event-detail-chapter {
+  display: inline-block;
+  padding: 3px 12px;
+  background: var(--ch-color, var(--primary));
+  color: #fff;
+  border-radius: var(--radius-full);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: var(--sp-md);
+}
+
+.event-detail-title {
+  font-size: clamp(1.6rem, 4vw, 2.5rem);
+  font-weight: 900;
+  color: #fff;
+  margin-bottom: var(--sp-lg);
+  line-height: 1.2;
+}
+
+.event-detail-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-lg);
+  color: rgba(255,255,255,0.75);
+  font-size: 0.9rem;
+}
+
+.event-detail-body {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: var(--sp-xl);
+  padding-top: var(--sp-xl);
+  padding-bottom: var(--sp-3xl);
+  align-items: start;
+}
+
+@media (max-width: 860px) { .event-detail-body { grid-template-columns: 1fr; } }
+
+.event-detail-desc h2,
+.event-detail-reg  h2 {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: var(--sp-md);
+}
+
+.event-detail-desc p { color: var(--text-muted); line-height: 1.7; }
+
+.event-detail-organizer {
+  margin-top: var(--sp-lg);
+  font-size: 0.82rem;
+  padding-top: var(--sp-md);
+  border-top: 1px solid var(--border);
+}
+
+.event-detail-reg { position: sticky; top: calc(var(--navbar-height) + var(--sp-lg)); }
+
+.event-detail-closed,
+.event-detail-success {
+  text-align: center;
+  padding: var(--sp-xl) 0;
+}
+.event-detail-closed h3,
+.event-detail-success h3 { margin: var(--sp-sm) 0 var(--sp-xs); font-size: 1.1rem; color: var(--navy); }
+.event-detail-closed p,
+.event-detail-success p  { color: var(--text-muted); font-size: 0.88rem; }
+
+/* Event Pass Styles */
+.event-detail-pass-container {
+  padding: 0;
+}
+
+.event-pass-card {
+  background: #ffffff;
+  border-radius: var(--radius);
+  border: 2px solid var(--primary);
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.event-pass-header {
+  padding: var(--sp-md) var(--sp-lg);
+  color: #ffffff;
+}
+
+.event-pass-brand {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  opacity: 0.95;
+}
+
+.event-pass-badge {
+  background: rgba(255, 255, 255, 0.25);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+.event-pass-event-title {
+  margin: var(--sp-xs) 0 0;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.3;
+}
+
+.event-pass-body {
+  padding: var(--sp-md) var(--sp-lg) var(--sp-lg);
+}
+
+.event-pass-ticket-id {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 10px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  color: #475569;
+  margin-bottom: var(--sp-md);
+  letter-spacing: 0.04em;
+}
+
+.event-pass-ticket-id strong {
+  font-family: monospace;
+  font-size: 0.95rem;
+  color: var(--navy);
+}
+
+.event-pass-field {
+  margin-bottom: var(--sp-sm);
+}
+
+.event-pass-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.event-pass-val {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.event-pass-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-sm);
+}
+
+.event-pass-instructions {
+  margin-top: var(--sp-md);
+  padding: var(--sp-sm) var(--sp-md);
+  background: #f8fafc;
+  border-left: 3px solid var(--primary);
+  border-radius: 0 6px 6px 0;
+}
+
+.event-pass-instructions h4 {
+  font-size: 0.78rem;
+  margin: 0 0 4px;
+  color: var(--navy);
+}
+
+.event-pass-instructions ol {
+  margin: 0;
+  padding-left: 16px;
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.event-pass-actions {
+  display: flex;
+  gap: var(--sp-sm);
+  margin-top: var(--sp-md);
+}
+
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  .event-pass-card, .event-pass-card * {
+    visibility: visible;
+  }
+  .event-pass-card {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 90%;
+    border: 2px solid #000;
+  }
+  .event-pass-actions {
+    display: none;
+  }
+}

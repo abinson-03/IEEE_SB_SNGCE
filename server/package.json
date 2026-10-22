@@ -1,0 +1,28 @@
+{
+  "name": "ieee-sb-portal-server",
+  "version": "1.0.0",
+  "description": "IEEE SB Portal – Express/Node backend",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "seed": "node scripts/seed.js",
+    "test": "node scripts/test-checklist.js && node scripts/test-api.js && node scripts/test-sprint2.js && node scripts/test-sprint3.js && node scripts/test-sprint4.js && node scripts/test-sprint5.js && node scripts/test-e2e-all.js",
+    "db:view": "node scripts/view-db.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.3",
+    "multer": "^2.4.0",
+    "nodemailer": "^10.1.7",
+    "pdfkit": "^0.20.2",
+    "qrcode": "^1.5.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

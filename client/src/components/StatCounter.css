@@ -1,0 +1,31 @@
+.stat-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--sp-xs);
+  padding: var(--sp-lg) var(--sp-md);
+}
+
+.stat-counter__icon {
+  font-size: 2.2rem;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.stat-counter__number {
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  font-weight: 800;
+  color: #0F172A; /* Dark navy */
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+}
+
+.stat-counter__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569; /* Slate */
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}

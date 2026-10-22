@@ -1,0 +1,75 @@
+/* ============================================================
+   IEEE SB Portal — CSS Custom Properties (Design Tokens)
+   Sprint 2 Design System
+   ============================================================ */
+
+:root {
+  /* Brand colours - Official IEEE & Design System Tokens */
+  --primary: #004976;        /* Deep IEEE Blue */
+  --primary-container: #00629b; /* Vibrant IEEE Blue */
+  --primary-dark: #003354;
+  --primary-light: #eaedff;  /* Soft Container */
+  --primary-surface: #f2f3ff;/* Subtle Surface Container */
+  --navy: #131b2e;           /* Deep Navy */
+  --navy-light: #1a2744;     /* Secondary Navy */
+  --accent: #904c00;         /* Official Gold/Amber */
+  --accent-warm: #f5a623;    /* Warm Amber */
+  --accent-gold: #ffdcc3;    /* Light Gold Container */
+  --accent-gold-text: #2f1500;
+
+  /* Chapter Palette */
+  --chapter-cis: #ffdcc3;
+  --chapter-cis-dark: #6d3900;
+  --chapter-cs: #ccdefe;
+  --chapter-cs-dark: #004976;
+  --chapter-sps: #e2e7ff;
+  --chapter-sps-dark: #00629b;
+  --chapter-wie: #dae2fd;
+  --chapter-wie-dark: #6d3900;
+
+  /* Neutrals */
+  --bg: #ffffff;
+  --bg-alt: #faf8ff;
+  --bg-dark: #131b2e;
+  --card-bg: #ffffff;
+  --border: #eaedff;
+  --border-dark: #c0c7d1;
+
+  /* Text */
+  --text: #131b2e;
+  --text-muted: #414750;
+  --text-light: #717881;
+  --text-inverse: #ffffff;
+
+  /* Spacing */
+  --sp-xs: 0.25rem;
+  --sp-sm: 0.5rem;
+  --sp-md: 1rem;
+  --sp-lg: 1.5rem;
+  --sp-xl: 2rem;
+  --sp-2xl: 3rem;
+  --sp-3xl: 4rem;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: 1.25rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius: 12px;
+  --radius-lg: 18px;
+  --radius-full: 9999px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(19, 27, 46, 0.05), 0 1px 2px rgba(19, 27, 46, 0.03);
+  --shadow: 0 4px 10px rgba(19, 27, 46, 0.06), 0 1px 3px rgba(19, 27, 46, 0.04);
+  --shadow-md: 0 10px 20px rgba(19, 27, 46, 0.08), 0 3px 6px rgba(19, 27, 46, 0.04);
+  --shadow-lg: 0 20px 30px rgba(19, 27, 46, 0.1), 0 8px 12px rgba(19, 27, 46, 0.05);
+
+  /* Transitions */
+  --transition: 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Navbar */
+  --navbar-height: 68px;
+}

@@ -1,0 +1,567 @@
+/* ============================================================
+   IEEE SB Portal — Chapter Page Styles
+   Matching /design-reference/chapter.png
+   ============================================================ */
+
+.chapter-page {
+  padding-top: var(--sp-md);
+  padding-bottom: var(--sp-3xl);
+  background: #faf8ff;
+  min-height: calc(100vh - var(--navbar-height));
+}
+
+/* ── Chapter Switcher Ribbon ── */
+.chapter-ribbon {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 4px 0 16px;
+  margin-bottom: var(--sp-md);
+  scrollbar-width: none;
+}
+
+.chapter-ribbon::-webkit-scrollbar {
+  display: none;
+}
+
+.chapter-ribbon__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 16px;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all var(--transition);
+  background: #eaedff;
+  color: #414750;
+  border: 1px solid rgba(0, 73, 118, 0.08);
+}
+
+.chapter-ribbon__item:hover {
+  background: #dae2fd;
+  color: #004976;
+  text-decoration: none;
+}
+
+.chapter-ribbon__item--active {
+  background: #004976 !important;
+  color: #ffffff !important;
+  box-shadow: 0 2px 8px rgba(0, 73, 118, 0.3);
+}
+
+/* ── Hero Banner Card ── */
+.chapter-hero-card {
+  position: relative;
+  width: 100%;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(19, 27, 46, 0.08);
+  background: #131b2e;
+  color: #ffffff;
+  margin-bottom: var(--sp-lg);
+}
+
+.chapter-hero-card__banner {
+  position: relative;
+  min-height: 240px;
+  background-size: cover;
+  background-position: center;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chapter-hero-card__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(19, 27, 46, 0.95) 0%, rgba(19, 27, 46, 0.6) 60%, rgba(19, 27, 46, 0.3) 100%);
+  z-index: 1;
+}
+
+.chapter-hero-card__top-badges {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chapter-hero-card__code-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-full);
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.chapter-hero-card__active-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.88);
+  color: #131b2e;
+  backdrop-filter: blur(8px);
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.chapter-hero-card__content {
+  position: relative;
+  z-index: 2;
+  margin-top: 32px;
+}
+
+.chapter-hero-card__title {
+  font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.2;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+}
+
+.chapter-hero-card__tagline {
+  font-size: 0.92rem;
+  color: #dae2fd;
+  max-width: 650px;
+  line-height: 1.5;
+}
+
+.chapter-hero-card__bottom-bar {
+  position: relative;
+  z-index: 2;
+  padding: 14px 24px;
+  background: rgba(19, 27, 46, 0.98);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.chapter-hero-card__member-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chapter-hero-card__member-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255, 220, 195, 0.15);
+  color: #ffdcc3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chapter-hero-card__member-num {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1;
+}
+
+.chapter-hero-card__member-label {
+  font-size: 0.74rem;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.chapter-hero-card__session-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-full);
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffdcc3;
+  font-size: 0.74rem;
+  font-weight: 600;
+}
+
+/* ── Mission & Focus Section ── */
+.chapter-mission-card {
+  background: #ffffff;
+  border-radius: var(--radius);
+  padding: var(--sp-lg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: var(--sp-lg);
+}
+
+.chapter-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-md);
+}
+
+.chapter-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+}
+
+.chapter-section-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.chapter-mission-text {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+  margin-bottom: var(--sp-md);
+}
+
+.chapter-focus-pills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.chapter-focus-pill {
+  background: #f2f3ff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+}
+
+.chapter-focus-pill__icon {
+  font-size: 22px;
+  color: #004976;
+}
+
+.chapter-focus-pill__label {
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--navy);
+}
+
+/* ── Executive Committee Grid ── */
+.chapter-officers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-md);
+  margin-bottom: var(--sp-xl);
+}
+
+@media (min-width: 640px) {
+  .chapter-officers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .chapter-officers-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.chapter-officer-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-lg) var(--sp-md);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.chapter-officer-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.chapter-officer-card__avatar {
+  margin-bottom: var(--sp-sm);
+}
+
+.chapter-officer-card__name {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0 0 2px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chapter-officer-card__dept {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.chapter-officer-card__role-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  font-size: 0.72rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.chapter-officer-card__role-badge--chair {
+  background: #131b2e;
+  color: #ffdcc3;
+  border: 1px solid rgba(255, 220, 195, 0.3);
+}
+
+.chapter-officer-card__role-badge--regular {
+  background: #e2e7ff;
+  color: #004976;
+}
+
+.chapter-officer-card__actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 8px;
+}
+
+.chapter-officer-card__btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #f2f3ff;
+  border: 1px solid var(--border);
+  color: #004976;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all var(--transition);
+  text-decoration: none;
+}
+
+.chapter-officer-card__btn:hover {
+  background: #004976;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ── Chapter Activities Section ── */
+.chapter-activities {
+  margin-bottom: var(--sp-xl);
+}
+
+.chapter-activities__header-link {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+}
+
+.chapter-activities__header-link:hover {
+  text-decoration: underline;
+}
+
+.chapter-activities__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chapter-activity-card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--sp-md) var(--sp-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition);
+}
+
+.chapter-activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.chapter-activity-card__left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 0;
+}
+
+.chapter-activity-card__date-box {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: #e2e7ff;
+  color: #004976;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.chapter-activity-card__date-month {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.chapter-activity-card__date-day {
+  font-size: 1.1rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.chapter-activity-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.chapter-activity-card__type-tag {
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  background: #ffdcc3;
+  color: #2f1500;
+}
+
+.chapter-activity-card__title {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.chapter-activity-card__meta {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.chapter-activity-card__btn {
+  padding: 6px 18px;
+  border-radius: var(--radius-full);
+  background: #004976;
+  color: #ffffff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: background var(--transition);
+}
+
+.chapter-activity-card__btn:hover {
+  background: #003354;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* ── Join SBC Bottom Card ── */
+.chapter-join-banner {
+  background: linear-gradient(135deg, #131b2e 0%, #1e293b 100%);
+  border-radius: var(--radius);
+  padding: var(--sp-md) var(--sp-lg);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-md);
+  box-shadow: 0 4px 16px rgba(19, 27, 46, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  flex-wrap: wrap;
+}
+
+.chapter-join-banner__left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.chapter-join-banner__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-sm);
+  background: rgba(255, 220, 195, 0.15);
+  color: #ffdcc3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.chapter-join-banner__title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 2px;
+}
+
+.chapter-join-banner__sub {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+}
+
+.chapter-join-banner__btn {
+  padding: 8px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all var(--transition);
+  text-decoration: none;
+}

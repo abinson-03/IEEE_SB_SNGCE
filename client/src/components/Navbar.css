@@ -1,0 +1,248 @@
+/* Navbar — IEEE SB Portal */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(19, 27, 46, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  height: var(--navbar-height);
+  border-bottom: 1px solid rgba(234, 237, 255, 0.12);
+  transition: box-shadow var(--transition-slow), background var(--transition);
+}
+
+.navbar--scrolled {
+  background: rgba(19, 27, 46, 0.98);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(234, 237, 255, 0.18);
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  gap: var(--sp-md);
+  flex-wrap: nowrap;
+}
+
+/* Logo with Official Image */
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+  transition: opacity var(--transition);
+}
+
+.navbar__logo:hover {
+  text-decoration: none;
+  opacity: 0.92;
+}
+
+.navbar__logo-img {
+  height: 42px;
+  width: auto;
+  max-width: 60px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar__logo-text-group {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.navbar__logo-main {
+  font-size: 1.05rem;
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.navbar__logo-ieee { color: #ffdcc3; }
+.navbar__logo-sb   { color: #ffffff; }
+
+.navbar__logo-sub {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #98cbff;
+  white-space: nowrap;
+}
+
+/* Desktop links */
+.navbar__links {
+  display: none;
+  list-style: none;
+  align-items: center;
+  gap: 0.25rem;
+  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+@media (min-width: 900px) { .navbar__links { display: flex; } }
+
+.navbar__link {
+  color: rgba(255,255,255,0.8);
+  font-size: 0.92rem;
+  font-weight: 500;
+  padding: 0.45rem 0.75rem;
+  border-radius: var(--radius-sm);
+  transition: color var(--transition), background var(--transition);
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.navbar__link:hover,
+.navbar__link.active { color: #fff; background: rgba(255,255,255,0.1); text-decoration: none; }
+
+/* Chapters dropdown */
+.navbar__dropdown-wrap { position: relative; white-space: nowrap; }
+
+.navbar__dropdown-wrap:hover .navbar__dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
+
+.navbar__dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-8px);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  min-width: 240px;
+  list-style: none;
+  padding: var(--sp-sm) 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+  white-space: nowrap;
+}
+
+.navbar__dropdown-link {
+  display: flex;
+  flex-direction: column;
+  padding: 0.6rem 1.1rem;
+  text-decoration: none;
+  transition: background var(--transition);
+  white-space: nowrap;
+}
+
+.navbar__dropdown-link:hover { background: var(--bg-alt); text-decoration: none; }
+
+.navbar__dropdown-name { font-weight: 700; color: var(--primary); font-size: 0.9rem; white-space: nowrap; }
+.navbar__dropdown-sub  { font-size: 0.75rem; color: var(--text-muted); white-space: nowrap; }
+
+/* Right side group — bell + user */
+.navbar__right {
+  display: none;
+  align-items: center;
+  gap: var(--sp-sm);
+  margin-left: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+@media (min-width: 900px) { .navbar__right { display: flex; } }
+
+.navbar__user-menu {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-sm);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.navbar__user-pill {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.85);
+  padding: 0.3rem 0.75rem;
+  background: rgba(255,255,255,0.1);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* CTA button sizing */
+.navbar__cta { flex-shrink: 0; font-size: 0.82rem; padding: 0.45rem 1rem; white-space: nowrap; }
+
+/* Hamburger */
+.navbar__hamburger {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+@media (min-width: 900px) { .navbar__hamburger { display: none; } }
+
+.navbar__hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: transform var(--transition), opacity var(--transition);
+}
+
+.navbar__hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.navbar__hamburger.open span:nth-child(2) { opacity: 0; }
+.navbar__hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+/* Mobile menu */
+.navbar__mobile {
+  background: var(--navy-light);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.navbar__mobile.open { max-height: 600px; }
+
+.navbar__mobile-link {
+  display: block;
+  padding: 0.75rem 1.25rem;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  transition: background var(--transition);
+}
+
+.navbar__mobile-link:hover,
+.navbar__mobile-link.active { background: rgba(255,255,255,0.08); color: #fff; text-decoration: none; }
+
+.navbar__mobile-link--sub { padding-left: 2.5rem; font-size: 0.875rem; }
+
+.navbar__mobile-section {
+  padding: 0.6rem 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+@media (min-width: 900px) { .navbar__mobile { display: none; } }

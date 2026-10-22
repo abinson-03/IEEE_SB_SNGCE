@@ -1,0 +1,941 @@
+[
+  {
+    "_id": "6ad83f9cf8e0129dc7569163",
+    "action": "SYSTEM_INITIALIZE",
+    "performedBy": "6ad83f8ef8e0129dc75690b1",
+    "targetType": "System",
+    "targetId": null,
+    "meta": {
+      "message": "Database reset and seeded with full IEEE SB SNGCE organizational hierarchy."
+    },
+    "createdAt": "2026-10-21T04:29:16.204Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad845818c80d7a114f1a8ea",
+    "action": "PHOTOS_UPLOADED",
+    "performedBy": "6ad8457b8c80d7a114f1a87d",
+    "targetType": "Event",
+    "targetId": "6ad8457c8c80d7a114f1a887",
+    "meta": {
+      "eventTitle": "S6B Analytics Summit 1792558458978",
+      "count": 1
+    },
+    "createdAt": "2026-10-21T04:54:25.240Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad845818c80d7a114f1a919",
+    "action": "MEETING_MINUTES_SUBMITTED",
+    "performedBy": "6ad8457b8c80d7a114f1a87d",
+    "targetType": "Unit",
+    "targetId": "6ad83f8ef8e0129dc75690a9",
+    "meta": {
+      "title": "CIS ExeCom Meeting 1792558458978",
+      "date": "2026-10-21T04:54:25.335Z"
+    },
+    "createdAt": "2026-10-21T04:54:25.342Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad848772d953f44fa1daf82",
+    "action": "USER_STATUS_UPDATED",
+    "performedBy": "6ad83f8ff8e0129dc75690b3",
+    "targetType": "User",
+    "targetId": "6ad83f9bf8e0129dc75690e7",
+    "meta": {
+      "name": "Sandra Paul",
+      "email": "sandra@ieee-sngce.in",
+      "newStatus": "inactive"
+    },
+    "createdAt": "2026-10-21T05:07:03.604Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad848b42d953f44fa1dafa4",
+    "action": "BUDGET_APPROVED",
+    "performedBy": "6ad83f8ff8e0129dc75690b3",
+    "targetType": "BudgetProposal",
+    "targetId": "6ad83f9cf8e0129dc756915f",
+    "meta": {
+      "title": "Deep Learning Workshop Cloud GPUs & Kits",
+      "amount": 4500,
+      "unit": "CIS",
+      "reviewComment": "Approved within semester budget."
+    },
+    "createdAt": "2026-10-21T05:08:04.878Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8493f2d953f44fa1db072",
+    "action": "QR_GENERATED",
+    "performedBy": "6ad83f8ff8e0129dc75690b3",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569156",
+    "meta": {
+      "title": "Generative AI & LLM Applications Hands-on"
+    },
+    "createdAt": "2026-10-21T05:10:23.838Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad880cfa0045e7db899eec2",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad880c4a0045e7db899ee3f",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T09:07:27.312Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad881424cf8f4727a13add9",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad881384cf8f4727a13ad55",
+    "targetType": "Event",
+    "targetId": "6ad8813c4cf8f4727a13adcf",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T09:09:22.403Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad887bf26e20015d78ddf09",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad887b126e20015d78dde86",
+    "targetType": "Event",
+    "targetId": "6ad887b626e20015d78ddeff",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T09:37:03.136Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad88fcf8738ba0aa14df826",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "generated": 0,
+      "skipped": 1,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:11:27.710Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad88fd18738ba0aa14df835",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "generated": 0,
+      "skipped": 1,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:11:29.995Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8949a8a8ddfc2ab124c97",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad8948e8a8ddfc2ab124c4f",
+    "targetType": "Event",
+    "targetId": "6ad894908a8ddfc2ab124c7d",
+    "meta": {
+      "eventTitle": "S5 Test Event 1792578702915",
+      "generated": 2,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:31:54.861Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8949a8a8ddfc2ab124ca4",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad8948e8a8ddfc2ab124c4f",
+    "targetType": "Event",
+    "targetId": "6ad894908a8ddfc2ab124c7d",
+    "meta": {
+      "eventTitle": "S5 Test Event 1792578702915",
+      "generated": 0,
+      "skipped": 2,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:31:54.877Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad89aec3d8b4b1ab683907a",
+    "action": "CERTIFICATE_TEMPLATE_UPLOADED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering",
+      "templatePath": "/uploads/certificate-templates/template-6ad83f9cf8e0129dc7569153-1792580332458-609931.png"
+    },
+    "createdAt": "2026-10-21T10:58:52.477Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad89af23d8b4b1ab6839087",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:58:58.650Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad89af23d8b4b1ab683908e",
+    "action": "CERTIFICATE_TEMPLATE_REMOVED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering"
+    },
+    "createdAt": "2026-10-21T10:58:58.662Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad89af73d8b4b1ab683909b",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:59:03.127Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad89b164e76dedb97d76198",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad89b0b4e76dedb97d7614d",
+    "targetType": "Event",
+    "targetId": "6ad89b0c4e76dedb97d7617e",
+    "meta": {
+      "eventTitle": "S5 Test Event 1792580363160",
+      "generated": 2,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:59:34.695Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad89b164e76dedb97d761a5",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad89b0b4e76dedb97d7614d",
+    "targetType": "Event",
+    "targetId": "6ad89b0c4e76dedb97d7617e",
+    "meta": {
+      "eventTitle": "S5 Test Event 1792580363160",
+      "generated": 0,
+      "skipped": 2,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T10:59:34.711Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8a2e7ea514c83c553476c",
+    "action": "CERTIFICATE_TEMPLATE_UPLOADED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering",
+      "templatePath": "/uploads/certificate-templates/template-6ad83f9cf8e0129dc7569153-1792582375190-835946.png"
+    },
+    "createdAt": "2026-10-21T11:32:55.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8a2ecea514c83c5534779",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T11:33:00.497Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8a2ecea514c83c5534780",
+    "action": "CERTIFICATE_TEMPLATE_REMOVED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering"
+    },
+    "createdAt": "2026-10-21T11:33:00.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8a2f1ea514c83c553478d",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "eventTitle": "MERN Stack Bootcamp & API Engineering",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T11:33:05.294Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8a5bf59286a979ba5d762",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad8a5b559286a979ba5d720",
+    "targetType": "Event",
+    "targetId": "6ad8a5b959286a979ba5d748",
+    "meta": {
+      "eventTitle": "S5 Test Event 1792583093852",
+      "generated": 2,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T11:45:03.648Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8a5bf59286a979ba5d76f",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad8a5b559286a979ba5d720",
+    "targetType": "Event",
+    "targetId": "6ad8a5b959286a979ba5d748",
+    "meta": {
+      "eventTitle": "S5 Test Event 1792583093852",
+      "generated": 0,
+      "skipped": 2,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T11:45:03.691Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8c7c3b01e001cc5dd1254",
+    "action": "PHOTOS_UPLOADED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "count": 1
+    },
+    "createdAt": "2026-10-21T14:10:11.878Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8c7d6b01e001cc5dd1282",
+    "action": "PHOTOS_UPLOADED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "count": 1
+    },
+    "createdAt": "2026-10-21T14:10:30.818Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cb732c366758cae90fd0",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad8cb6c2c366758cae90f4e",
+    "targetType": "Event",
+    "targetId": "6ad8cb702c366758cae90fc6",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T14:25:55.270Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cd00e3f91b928ef3f092",
+    "action": "PHOTO_UPDATED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "photoId": "6ad8cd00e652e1c92b7ac082",
+      "caption": "Brand New Edited Caption!",
+      "isCover": true
+    },
+    "createdAt": "2026-10-21T14:32:32.841Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cd00e3f91b928ef3f09c",
+    "action": "PHOTO_DELETED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "filename": "test-gallery-edit.jpg",
+      "caption": "Brand New Edited Caption!"
+    },
+    "createdAt": "2026-10-21T14:32:32.880Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cd74e3f91b928ef3f0b7",
+    "action": "PHOTO_UPDATED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "photoId": "6ad8cd73302d95085a5831aa",
+      "caption": "Brand New Edited Caption!",
+      "isCover": true
+    },
+    "createdAt": "2026-10-21T14:34:28.040Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cd74e3f91b928ef3f0c1",
+    "action": "PHOTO_DELETED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "filename": "test-gallery-edit.jpg",
+      "caption": "Brand New Edited Caption!"
+    },
+    "createdAt": "2026-10-21T14:34:28.068Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cd8d33741d83c3a7583b",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ad8cd8633741d83c3a757b7",
+    "targetType": "Event",
+    "targetId": "6ad8cd8a33741d83c3a75831",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "generated": 1,
+      "skipped": 0,
+      "failed": 0
+    },
+    "createdAt": "2026-10-21T14:34:53.693Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cdd0e3f91b928ef3f0e5",
+    "action": "PHOTO_DELETED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "filename": "event-1792591811834-194541869.jpeg",
+      "caption": ""
+    },
+    "createdAt": "2026-10-21T14:36:00.526Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cdd5e3f91b928ef3f0ef",
+    "action": "PHOTO_DELETED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "filename": "event-1792591830803-303669885.jpeg",
+      "caption": ""
+    },
+    "createdAt": "2026-10-21T14:36:05.608Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cddfe3f91b928ef3f101",
+    "action": "PHOTO_DELETED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "filename": "test-gallery-edit.jpg",
+      "caption": "Original Caption Before Edit"
+    },
+    "createdAt": "2026-10-21T14:36:15.135Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cde9e3f91b928ef3f112",
+    "action": "PHOTOS_UPLOADED",
+    "performedBy": "6ad83f91f8e0129dc75690bd",
+    "targetType": "Event",
+    "targetId": "6ad880c8a0045e7db899eeb8",
+    "meta": {
+      "eventTitle": "Polish Sprint AI Hands-on Workshop",
+      "count": 1
+    },
+    "createdAt": "2026-10-21T14:36:25.968Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8d0c0e3f91b928ef3f1d7",
+    "action": "PHOTO_UPDATED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "photoId": "6ad8d0c01466310f27c46919",
+      "caption": "Brand New Edited Caption!",
+      "isCover": true
+    },
+    "createdAt": "2026-10-21T14:48:32.502Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8d0c0e3f91b928ef3f1e0",
+    "action": "PHOTO_DELETED",
+    "performedBy": "6ad83f8ef8e0129dc75690af",
+    "targetType": "Event",
+    "targetId": "6ad83f9cf8e0129dc7569153",
+    "meta": {
+      "filename": "test-gallery-edit.jpg",
+      "caption": "Brand New Edited Caption!"
+    },
+    "createdAt": "2026-10-21T14:48:32.517Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad9ff1b1fe75a58288fa78a",
+    "action": "BUDGET_PROPOSAL_SUBMITTED",
+    "performedBy": "6ad9e58ef0bc3df2341f4e83",
+    "targetType": "BudgetProposal",
+    "targetId": "6ad9ff1b1fe75a58288fa788",
+    "meta": {
+      "title": "Ideathon 2026",
+      "amount": 3180
+    },
+    "createdAt": "2026-10-22T12:18:35.866Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada023c1fe75a58288fa7f1",
+    "action": "BUDGET_APPROVED",
+    "performedBy": "6ad83f8ff8e0129dc75690b3",
+    "targetType": "BudgetProposal",
+    "targetId": "6ad9ff1b1fe75a58288fa788",
+    "meta": {
+      "title": "Ideathon 2026",
+      "amount": 3180,
+      "unit": "CIS",
+      "reviewComment": "Approved from ieee annual budget."
+    },
+    "createdAt": "2026-10-22T12:31:56.764Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada0ceeb9f54f8ec67ffccc",
+    "action": "EVENT_CREATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada0ceeb9f54f8ec67ffcca",
+    "meta": {
+      "title": "Regen 2026"
+    },
+    "createdAt": "2026-10-22T13:17:34.704Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada435216312b420686919c",
+    "action": "DUTY_ASSIGNED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "DutyAssignment",
+    "targetId": "6ada0a61c6de4cd3d6f01a8b",
+    "meta": {
+      "position": "Chair",
+      "unit": "CIS",
+      "userId": "6ad83f9bf8e0129dc75690e7",
+      "replacedUserId": "6ada0a61c6de4cd3d6f01a87"
+    },
+    "createdAt": "2026-10-22T17:09:38.161Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada435216312b42068691b0",
+    "action": "DUTY_ASSIGNED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "DutyAssignment",
+    "targetId": "6ada0a61c6de4cd3d6f01a8b",
+    "meta": {
+      "position": "Chair",
+      "unit": "CIS",
+      "userId": "6ada0a61c6de4cd3d6f01a87",
+      "replacedUserId": "6ad83f9bf8e0129dc75690e7"
+    },
+    "createdAt": "2026-10-22T17:09:38.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada4cccdab6e542ec41dc7d",
+    "action": "POSITION_TEMPLATE_EDITED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "PositionTemplate",
+    "targetId": "6ada0a65c6de4cd3d6f01ab2",
+    "meta": {
+      "positionName": "Web Master",
+      "dutyType": "budget"
+    },
+    "createdAt": "2026-10-22T17:50:04.291Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada4da1dab6e542ec41dd44",
+    "action": "EVENT_CREATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "title": "Ideathon"
+    },
+    "createdAt": "2026-10-22T17:53:37.218Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5140eb92df0565f9e65f",
+    "action": "EVENT_CREATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada5140eb92df0565f9e65d",
+    "meta": {
+      "title": "Test Draft AI Workshop",
+      "status": "draft"
+    },
+    "createdAt": "2026-10-22T18:09:04.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5140eb92df0565f9e668",
+    "action": "EVENT_PUBLISHED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "Event",
+    "targetId": "6ada5140eb92df0565f9e65d",
+    "meta": {
+      "title": "Test Draft AI Workshop"
+    },
+    "createdAt": "2026-10-22T18:09:04.537Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5462d2a3cadeb6f6e295",
+    "action": "QR_GENERATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "title": "Ideathon"
+    },
+    "createdAt": "2026-10-22T18:22:26.014Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada58943af05ba365a0602f",
+    "action": "QR_GENERATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "title": "Ideathon",
+      "lanOrigin": "http://192.168.56.1:3000"
+    },
+    "createdAt": "2026-10-22T18:40:20.844Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada58943af05ba365a0603a",
+    "action": "CHECKIN_MARKED",
+    "performedBy": null,
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "attendee": "Arjun Manoj",
+      "eventTitle": "Ideathon"
+    },
+    "createdAt": "2026-10-22T18:40:20.870Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada58943af05ba365a06044",
+    "action": "DESK_CHECKIN_MARKED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "attendee": "Jibin",
+      "eventTitle": "Ideathon"
+    },
+    "createdAt": "2026-10-22T18:40:20.880Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada58943af05ba365a06056",
+    "action": "DESK_CHECKIN_MARKED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "attendee": "Jibin",
+      "eventTitle": "Ideathon"
+    },
+    "createdAt": "2026-10-22T18:40:20.897Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada59803af05ba365a06079",
+    "action": "CERTIFICATE_TEMPLATE_UPLOADED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "eventTitle": "Ideathon",
+      "templatePath": "/uploads/certificate-templates/template-6ada4da1dab6e542ec41dd42-1792694656297-797558.png"
+    },
+    "createdAt": "2026-10-22T18:44:16.335Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5dd80f4a88699341507d",
+    "action": "QR_GENERATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "title": "Ideathon",
+      "lanOrigin": "http://192.168.56.1:3000"
+    },
+    "createdAt": "2026-10-22T19:02:48.866Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5dd80f4a886993415089",
+    "action": "CHECKIN_MARKED",
+    "performedBy": "6ada460f16312b420686929c",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "attendee": "Abu",
+      "ticketCode": "CIS-1303",
+      "eventTitle": "Ideathon"
+    },
+    "createdAt": "2026-10-22T19:02:48.889Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5e860f4a88699341510a",
+    "action": "DESK_CHECKIN_MARKED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "attendee": "Jibin",
+      "eventTitle": "Ideathon"
+    },
+    "createdAt": "2026-10-22T19:05:42.956Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5e880f4a886993415114",
+    "action": "DESK_CHECKIN_MARKED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "attendee": "Arjun Manoj",
+      "eventTitle": "Ideathon"
+    },
+    "createdAt": "2026-10-22T19:05:44.097Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada5e8a0f4a88699341511f",
+    "action": "DESK_CHECKIN_MARKED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "attendee": "Abu",
+      "eventTitle": "Ideathon"
+    },
+    "createdAt": "2026-10-22T19:05:46.521Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada61a7f0d709b8444d2cce",
+    "action": "CERTIFICATE_TEMPLATE_UPLOADED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "eventTitle": "Ideathon",
+      "templatePath": "/uploads/certificate-templates/template-6ada4da1dab6e542ec41dd42-1792696743329-500654.png"
+    },
+    "createdAt": "2026-10-22T19:19:03.405Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada62e0f0d709b8444d2d7b",
+    "action": "EVENT_EDITED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "title": "Ideathon"
+    },
+    "createdAt": "2026-10-22T19:24:16.273Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada6b13376fb751faea1801",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "eventTitle": "Ideathon",
+      "generated": 2,
+      "updated": 0,
+      "failed": 1
+    },
+    "createdAt": "2026-10-22T19:59:15.396Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada6b13376fb751faea180c",
+    "action": "EVENT_EDITED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "title": "Ideathon",
+      "date": "2026-10-27T10:00:00.000Z"
+    },
+    "createdAt": "2026-10-22T19:59:15.450Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada6b13376fb751faea182a",
+    "action": "EVENT_EDITED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "title": "Ideathon",
+      "date": "2026-10-28T09:00:00.000Z"
+    },
+    "createdAt": "2026-10-22T19:59:15.490Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada6bd0376fb751faea1857",
+    "action": "CERTIFICATES_GENERATED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Event",
+    "targetId": "6ada4da1dab6e542ec41dd42",
+    "meta": {
+      "eventTitle": "Ideathon",
+      "generated": 1,
+      "updated": 2,
+      "failed": 0
+    },
+    "createdAt": "2026-10-22T20:02:24.974Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada6d6a376fb751faea18e9",
+    "action": "POSTER_RELEASED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Unit",
+    "targetId": "6ad83f8ef8e0129dc75690a9",
+    "meta": {
+      "title": "conclave",
+      "category": "poster"
+    },
+    "createdAt": "2026-10-22T20:09:14.858Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada73eee63c3a67c9ce120e",
+    "action": "POSTER_RELEASED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a87",
+    "targetType": "Unit",
+    "targetId": "6ad83f8ef8e0129dc75690a9",
+    "meta": {
+      "title": "Chair Test Creative",
+      "category": "poster"
+    },
+    "createdAt": "2026-10-22T20:37:02.402Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada73eee63c3a67c9ce1219",
+    "action": "POSTER_RELEASED",
+    "performedBy": "6ada0a65c6de4cd3d6f01ab7",
+    "targetType": "Unit",
+    "targetId": "6ad83f8ef8e0129dc75690a9",
+    "meta": {
+      "title": "Design Lead Test Creative",
+      "category": "poster"
+    },
+    "createdAt": "2026-10-22T20:37:02.435Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ada73eee63c3a67c9ce1224",
+    "action": "POSTER_RELEASED",
+    "performedBy": "6ada0a61c6de4cd3d6f01a80",
+    "targetType": "Unit",
+    "targetId": "6ad83f8ef8e0129dc75690a9",
+    "meta": {
+      "title": "Faculty Test Creative",
+      "category": "poster"
+    },
+    "createdAt": "2026-10-22T20:37:02.460Z",
+    "__v": 0
+  }
+]

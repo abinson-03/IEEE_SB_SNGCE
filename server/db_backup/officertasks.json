@@ -1,0 +1,28 @@
+[
+  {
+    "_id": "6ad8cd8a33741d83c3a757ea",
+    "unit": "6ad83f8ef8e0129dc75690a9",
+    "title": "Prepare CIS Workshop Presentation",
+    "description": "Draft slides for the intro to AI talk next Tuesday",
+    "assignedTo": "6ad8cd8733741d83c3a757bd",
+    "dueDate": "2026-10-24T14:34:50.275Z",
+    "priority": "high",
+    "status": "done",
+    "createdBy": "6ad8cd8633741d83c3a757bb",
+    "createdAt": "2026-10-21T14:34:50.284Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad8cd8a33741d83c3a757f1",
+    "unit": "6ad83f8ef8e0129dc75690a7",
+    "title": "Annual Branch Audit Preparation",
+    "description": "",
+    "assignedTo": "6ad8cd8633741d83c3a757bb",
+    "dueDate": null,
+    "priority": "medium",
+    "status": "pending",
+    "createdBy": "6ad8cd8633741d83c3a757b7",
+    "createdAt": "2026-10-21T14:34:50.302Z",
+    "__v": 0
+  }
+]

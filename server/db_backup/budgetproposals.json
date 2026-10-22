@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "6ad83f9cf8e0129dc756915f",
+    "unit": "6ad83f8ef8e0129dc75690a9",
+    "title": "Deep Learning Workshop Cloud GPUs & Kits",
+    "amount": 4500,
+    "description": "Cloud GPU compute credits and printed reference cheat-sheets for 40 hands-on attendees.",
+    "submittedBy": "6ad83f91f8e0129dc75690bd",
+    "status": "approved",
+    "reviewedBy": "6ad83f8ff8e0129dc75690b3",
+    "reviewDate": "2026-10-21T05:08:04.872Z",
+    "reviewComment": "Approved within semester budget.",
+    "createdAt": "2026-10-21T04:29:16.201Z",
+    "updatedAt": "2026-10-21T05:08:04.874Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad83f9cf8e0129dc7569160",
+    "unit": "6ad83f8ef8e0129dc75690a7",
+    "title": "Algorhythm Hackathon Refreshments & Badges",
+    "amount": 3200,
+    "description": "Lanyards, printed ID passes, and evening tea for participants.",
+    "submittedBy": "6ad83f90f8e0129dc75690b7",
+    "status": "approved",
+    "reviewedBy": "6ad83f8ef8e0129dc75690b1",
+    "reviewDate": "2026-10-21T04:29:16.200Z",
+    "reviewComment": "Approved within semester budget quota.",
+    "createdAt": "2026-10-21T04:29:16.201Z",
+    "updatedAt": "2026-10-21T04:29:16.201Z",
+    "__v": 0
+  },
+  {
+    "_id": "6ad9ff1b1fe75a58288fa788",
+    "unit": "6ad83f8ef8e0129dc75690a9",
+    "title": "Ideathon 2026",
+    "amount": 3180,
+    "description": "We have to conduct it",
+    "submittedBy": "6ad9e58ef0bc3df2341f4e83",
+    "status": "approved",
+    "reviewedBy": "6ad83f8ff8e0129dc75690b3",
+    "reviewDate": "2026-10-22T12:31:56.755Z",
+    "reviewComment": "Approved from ieee annual budget.",
+    "createdAt": "2026-10-22T12:18:35.856Z",
+    "updatedAt": "2026-10-22T12:31:56.756Z",
+    "__v": 0
+  }
+]

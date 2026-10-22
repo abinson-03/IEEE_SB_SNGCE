@@ -1,0 +1,140 @@
+/* NotificationBell — Dropdown notification centre */
+
+.notif-bell {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.notif-bell__btn {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  color: rgba(255,255,255,0.85);
+  transition: background var(--transition);
+  line-height: 1;
+}
+
+.notif-bell__btn:hover { background: rgba(255,255,255,0.12); }
+
+.notif-bell__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.6rem;
+  font-weight: 800;
+  min-width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 3px;
+  line-height: 1;
+  border: 2px solid var(--navy);
+}
+
+/* Dropdown */
+.notif-dropdown {
+  position: absolute;
+  top: calc(100% + 12px);
+  right: 0;
+  width: 340px;
+  max-height: 480px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  z-index: 2000;
+  overflow: hidden;
+}
+
+/* Mobile: full width */
+@media (max-width: 440px) {
+  .notif-dropdown {
+    width: calc(100vw - 2rem);
+    right: calc(-1 * (100vw / 2 - 170px));
+  }
+}
+
+.notif-dropdown__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--sp-md);
+  border-bottom: 1px solid var(--border);
+  flex-shrink: 0;
+}
+
+.notif-dropdown__title {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.notif-dropdown__mark-all {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: inherit;
+  padding: 0;
+}
+
+.notif-dropdown__mark-all:hover { text-decoration: underline; }
+
+.notif-dropdown__list {
+  overflow-y: auto;
+  flex: 1;
+}
+
+.notif-dropdown__empty {
+  text-align: center;
+  padding: var(--sp-2xl) var(--sp-md);
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+/* Individual notification */
+.notif-item {
+  display: flex;
+  gap: var(--sp-sm);
+  padding: var(--sp-md);
+  border-bottom: 1px solid var(--border);
+  cursor: default;
+  transition: background var(--transition);
+  align-items: flex-start;
+}
+
+.notif-item--unread {
+  background: var(--primary-light);
+  cursor: pointer;
+}
+
+.notif-item--unread:hover { background: #d0e8f5; }
+
+.notif-item__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+
+.notif-item--unread .notif-item__dot { background: var(--primary); }
+
+.notif-item__body  { flex: 1; min-width: 0; }
+.notif-item__title { font-size: 0.87rem; font-weight: 600; color: var(--text); margin-bottom: 2px; }
+.notif-item__msg   { font-size: 0.8rem; color: var(--text-muted); line-height: 1.4; margin-bottom: 4px; }
+.notif-item__time  { font-size: 0.72rem; color: var(--text-light); }
